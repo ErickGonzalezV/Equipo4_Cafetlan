@@ -18,4 +18,8 @@ Los integrantes de este equipo son:
 5. Luis Isaac Méndez Villegas
 6. Erick Gonzales
 7. Harold Iván Gutiérrez Romero
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> develop
