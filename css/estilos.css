@@ -1,0 +1,60 @@
+
+
+
+html{
+   --bg-color:#736F4E;
+   --font-color:#3B3923;
+   --hg-color:#B4C292;
+   --coff-color:#D17A22;
+   --vino-color:#4C061D;
+}
+
+body{
+   background-color: var(--bg-color);
+   color: var(--hg-color);
+}
+
+    .nav-item{
+        justify-content: flex-end;
+       
+    
+    div.container{
+     margin: auto;
+     display: flex;
+    
+  }
+ }
+ .fluid-container{
+    background-color:var(--hg-color);
+    padding-bottom: 30px;
+    padding-top: 30px;
+ }
+ .nav-link{
+    color: var(--font-color);
+    display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Oxygen", sans-serif;
+
+ }
+ h1{
+   font-family: "Oxygen", sans-serif;
+ }
+ p{
+   font-family: "Raleway", sans-serif;
+ }
+ #carouselExampleCaptions{
+   padding-top: 50px;
+   padding-bottom: 50px;
+ }
+
+ .card{
+   justify-content: space-around;
+   padding-top: auto;
+ }
+
+ .container#proyecto{
+   justify-content:flex-end;
+   margin-top: 50px;
+   font-family: "Raleway", sans-serif;;
+ }
