@@ -13,11 +13,11 @@ body{
    background-color: var(--bg-color);
    color: var(--hg-color);
 }
-@media (max-width:431px){
+
     .nav-item{
         justify-content: flex-end;
        
-    }
+    
     div.container{
      margin: auto;
      display: flex;
@@ -42,4 +42,19 @@ body{
  }
  p{
    font-family: "Raleway", sans-serif;
+ }
+ #carouselExampleCaptions{
+   padding-top: 50px;
+   padding-bottom: 50px;
+ }
+
+ .card{
+   justify-content: space-around;
+   padding-top: auto;
+ }
+
+ .container#proyecto{
+   justify-content:flex-end;
+   margin-top: 50px;
+   font-family: "Raleway", sans-serif;;
  }
