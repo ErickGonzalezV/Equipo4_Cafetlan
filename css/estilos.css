@@ -13,10 +13,20 @@ body{
    background-color: var(--bg-color);
    color: var(--hg-color);
 }
-
+.nav {
+  justify-content: center;
+  flex-wrap: wrap;
+}
     .nav-item{
         justify-content: flex-end;
-       
+         .nav {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .bi{
+      justify-content: right;
+      padding-right: 40px;
+    }
     
     div.container{
      margin: auto;
@@ -56,5 +66,5 @@ body{
  .container#proyecto{
    justify-content:flex-end;
    margin-top: 50px;
-   font-family: "Raleway", sans-serif;;
+   font-family: "Raleway", sans-serif;
  }
