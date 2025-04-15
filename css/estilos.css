@@ -43,15 +43,6 @@ body{
  p{
    font-family: "Raleway", sans-serif;
  }
- #carouselExampleCaptions{
-   padding-top: 50px;
-   padding-bottom: 50px;
- }
-
- .card{
-   justify-content: space-around;
-   padding-top: auto;
- }
 
  .container#proyecto{
    justify-content:flex-end;
@@ -59,12 +50,12 @@ body{
    font-family: "Raleway", sans-serif;;
  }
 
- .cards {
-  margin: auto;
-}
-
 .row {
   justify-content: space-around;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+.h-100 {
+  background-color: var(--bg-color);
 }
