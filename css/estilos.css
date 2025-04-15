@@ -58,3 +58,13 @@ body{
    margin-top: 50px;
    font-family: "Raleway", sans-serif;;
  }
+
+ .cards {
+  margin: auto;
+}
+
+.row {
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
