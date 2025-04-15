@@ -14,29 +14,24 @@ body{
    color: var(--hg-color);
 }
 
-    .nav-item{
-        justify-content: flex-end;
-       
     
     div.container{
      margin: auto;
      display: flex;
     
   }
- }
+ 
  .fluid-container{
     background-color:var(--hg-color);
     padding-bottom: 30px;
     padding-top: 30px;
- }
- .nav-link{
-    color: var(--font-color);
-    display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-family: "Oxygen", sans-serif;
-
- }
+  }
+  
+  nav.navbar.navbar-expand-lg {
+     background-color: var(--hg-color);
+     font-family: "Oxygen", sans-serif;
+     
+  }
  h1{
    font-family: "Oxygen", sans-serif;
  }
@@ -49,6 +44,12 @@ body{
    margin-top: 50px;
    font-family: "Raleway", sans-serif;;
  }
+
+ #carouselCafetlan{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
 
 .row {
   justify-content: space-around;
