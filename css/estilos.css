@@ -13,58 +13,75 @@ body{
    background-color: var(--bg-color);
    color: var(--hg-color);
 }
-.nav {
-  justify-content: center;
-  flex-wrap: wrap;
-}
-    .nav-item{
-        justify-content: flex-end;
-         .nav {
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-    .bi{
-      justify-content: right;
-      padding-right: 40px;
-    }
+
     
     div.container{
      margin: auto;
      display: flex;
     
   }
- }
+ 
  .fluid-container{
     background-color:var(--hg-color);
     padding-bottom: 30px;
     padding-top: 30px;
- }
- .nav-link{
-    color: var(--font-color);
-    display: flex;
-  align-items: center;
-  justify-content: space-around;
-  font-family: "Oxygen", sans-serif;
-
- }
+  }
+  
+  nav.navbar.navbar-expand-lg {
+     background-color: var(--hg-color);
+     font-family: "Oxygen", sans-serif;
+     
+  }
  h1{
    font-family: "Oxygen", sans-serif;
  }
  p{
    font-family: "Raleway", sans-serif;
  }
- #carouselExampleCaptions{
-   padding-top: 50px;
-   padding-bottom: 50px;
- }
-
- .card{
-   justify-content: space-around;
-   padding-top: auto;
- }
 
  .container#proyecto{
    justify-content:flex-end;
    margin-top: 50px;
-   font-family: "Raleway", sans-serif;
+   font-family: "Raleway", sans-serif;;
  }
+
+ #carouselCafetlan{
+  padding-top: 50px;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+.row {
+  justify-content: space-around;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.h-100 {
+  background-color: var(--bg-color);
+}
+
+footer{
+  background-color: #B4C292;
+  color: #3B3923;
+  
+  padding: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+#tituloFooter{
+  font-family: "Crimson Text", serif;
+  display: flex;
+  align-items: center;
+}
+
+#footerDos {
+  display: flex;
+  justify-content: space-between; 
+  gap: 2rem; 
+  font-family: 'Oxygen';
+  font-style: normal;
+}
