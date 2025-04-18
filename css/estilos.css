@@ -20,6 +20,7 @@ body{
      display: flex;
     
   }
+
  
  .fluid-container{
     background-color:var(--hg-color);
@@ -32,6 +33,13 @@ body{
      font-family: "Oxygen", sans-serif;
      
   }
+  .navbar-brand{
+    font-family:"Crimson Text", serif;
+    font-size: 30px;
+    margin-left: 30px;
+    color: #3B3923;
+  }
+
  h1{
    font-family: "Oxygen", sans-serif;
  }
@@ -41,8 +49,9 @@ body{
 
  .container#proyecto{
    justify-content:flex-end;
-   margin-top: 50px;
+   margin-top: 20px;
    font-family: "Raleway", sans-serif;;
+   padding: 40px;
  }
 
  #carouselCafetlan{
@@ -50,6 +59,8 @@ body{
   padding-bottom: 50px;
   margin-top: 50px;
 }
+
+
 
 .row {
   justify-content: space-around;
@@ -59,4 +70,57 @@ body{
 
 .h-100 {
   background-color: var(--bg-color);
+}
+
+.btn-primary{
+  background-color: var(--vino-color);
+  border-color: var(--vino-color);
+
+}
+.btn-primary:hover {
+  background-color: var(--hg-color);
+  border-color: var(--hg-color);
+
+}
+
+footer{
+  background-color: #3B3923;
+  color: #B4C292;
+  
+  padding: 40px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  
+}
+
+#tituloFooter{
+  font-family: "Crimson Text", serif;
+  display: flex;
+  align-items: center;
+}
+
+#footerDos {
+  display: flex;
+  justify-content: space-between; 
+  gap: 90px; 
+  font-family: 'Oxygen';
+  font-style: normal;
+  font-size: 20px;
+}
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+footer h5 {
+  font-size: 14px;
+  margin-bottom: 10px; 
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.imagen-carrusel {
+  height: 500px;
+  width: 370px;
 }
