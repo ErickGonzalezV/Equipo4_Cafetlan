@@ -122,5 +122,20 @@ footer h5 {
 
 .imagen-carrusel {
   height: 500px;
-  width: 370px;
+  width: 300px;
 }
+
+/* Apartado de contacto */
+
+#contacto{
+  margin-top: 100px;
+}
+
+#labelContacto{
+  font-family: "Oxygen", sans-serif;
+}
+#email{
+  font-family: "Raleway", sans-serif;
+}
+
+/* FIn del apartado de contacto */
