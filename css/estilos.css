@@ -100,14 +100,18 @@ footer{
   align-items: center;
 }
 
+
+
 #footerDos {
   display: flex;
   justify-content: space-between; 
-  gap: 90px; 
+  padding: 10px;
+  gap: 60px; 
   font-family: 'Oxygen';
   font-style: normal;
   font-size: 20px;
 }
+
 footer h3 {
   font-size: 20px;
   margin-bottom: 15px;
