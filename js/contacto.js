@@ -89,6 +89,16 @@ document.getElementById('form')
             return;
           } //Termina validación teléfono
 
+
+    // Validación de mensaje  con expresion regular
+    const mensajeRegex = /^[A-Za-z][A-Za-z0-9 "$%()&*?¿!¡/]*$/;
+    if (!mensajeRegex.test(mensaje)) {
+      alert("el mensaje es invalido");
+  }else{
+      alert("el mensaje es valido");
+  }//fin validación mensaje
+
+
     btn.textContent = 'Enviando...';
 
     const serviceID = 'default_service';
