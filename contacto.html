@@ -85,19 +85,19 @@
         <form id="form" novalidate>
         <div class="mb-3">
             <label for="nombre" class="form-label" id="labelContacto">Nombre</label>
-            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
+            <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Nombre">
         </div>
         <div class="mb-3">
             <label for="email" class="form-label" id="labelContacto email">Correo Electrónico</label>
-            <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
+            <input type="email" class="form-control" id="email" name="email" placeholder="nombre@ejemplo.com">
         </div>
         <div class="mb-3">
           <label for="telefono" class="form-label" id="labelContacto telefono">Número de teléfono</label>
-          <input type="number" class="form-control" id="telefono" placeholder="Número de teléfono">
+          <input type="number" class="form-control" id="telefono" name="telefono" placeholder="Número de teléfono">
       </div>
         <div class="mb-3">
             <label for="mensaje" class="form-label" id="labelContacto mensaje">Mensaje</label>
-            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+            <textarea class="form-control" id="mensaje" name= "mensaje" rows="3"></textarea>
         </div>
         <div class="col-auto">
             <button type="submit" class="btn btn-primary mb-3" id="btnEnviar">Enviar</button>
