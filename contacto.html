@@ -81,26 +81,30 @@
     
     <main class="container" id="contacto">
         <h1>Contáctanos</h1>
+
+        <form id="form">
         <div class="mb-3">
             <label for="name" class="form-label" id="labelContacto">Nombre</label>
-            <input type="text" class="form-control" id="name" placeholder="nombre">
+            <input type="text" class="form-control" id="nombre" placeholder="Nombre">
         </div>
         <div class="mb-3">
-            <label for="email" class="form-label" id="labelContacto">Correo Electronico</label>
+            <label for="email" class="form-label" id="labelContacto email">Correo Electrónico</label>
             <input type="email" class="form-control" id="email" placeholder="nombre@ejemplo.com">
         </div>
         <div class="mb-3">
-          <label for="name" class="form-label" id="labelContacto">Numero de telefono</label>
-          <input type="number" class="form-control" id="name" placeholder="numero de telefono">
+          <label for="name" class="form-label" id="labelContacto telefono">Número de teléfono</label>
+          <input type="number" class="form-control" id="telefono" placeholder="Número de teléfono">
       </div>
         <div class="mb-3">
-            <label for="mensaje" class="form-label" id="labelContacto">Mensaje</label>
+            <label for="mensaje" class="form-label" id="labelContacto mensaje">Mensaje</label>
             <textarea class="form-control" id="mensaje" rows="3"></textarea>
         </div>
         <div class="col-auto">
             <button type="submit" class="btn btn-primary mb-3" id="btnEnviar">Enviar</button>
         </div>
+        </form>
     </main>
+
 
      <!-- FOOTER  -->
      <footer>
@@ -129,5 +133,11 @@
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script src="./js/contacto.js"></script>
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  
+  <script type="text/javascript">
+    emailjs.init('0sHJ7bOiXeQcai5DA')
+  </script>
 </body>
 </html>
