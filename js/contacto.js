@@ -71,6 +71,32 @@ document.getElementById('form')
     }
 /////////////////////////////////fin de la validacion de email////////////////////////////////
 
+  //Validación teléfono
+  const regexNumber = new RegExp ("^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,5}$");
+    if (telefono === "") {
+        Swal.fire({
+            title: "Algo sucedió!",
+            text: "El número proporcionado no es válido.",
+            icon: "error"
+            });
+            return;
+    } else if (!regexNumber.test(telefono)) {
+            Swal.fire({
+            title: "¡Listo!",
+            text: "Tu número telefónico fue validado",
+            icon: "success"
+            });
+            return;
+          } //Termina validación teléfono
+
+
+    // Validación de mensaje  con expresion regular
+    const mensajeRegex = /^[A-Za-z][A-Za-z0-9 "$%()&*?¿!¡/]*$/;
+    if (!mensajeRegex.test(mensaje)) {
+      alert("el mensaje es invalido");
+  }else{
+      alert("el mensaje es valido");
+  }//fin validación mensaje
 
 
     btn.textContent = 'Enviando...';
