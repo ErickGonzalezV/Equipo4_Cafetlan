@@ -19,7 +19,7 @@ const footer = document.getElementById("footer")
             <a class="nav-link" href="./productos.html">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="./formRegistro.html">Regístrate</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./contacto.html">Contáctanos</a>
@@ -29,9 +29,7 @@ const footer = document.getElementById("footer")
 
       <div class="icons d-flex ms-auto ">
         <ul class="navbar-nav">
-          <li class="nav-link">
-            <i class="bi bi-search" href="#"></i>
-          <li class="nav-link">
+          
             <i class="bi bi-cart2"></i>
           </li>
           <li class="nav-link">
@@ -61,7 +59,7 @@ const footer = document.getElementById("footer")
         <div id="contactoFooter">
             <h3>Contacto</h3>
             <h5>Ayuda</h5>
-            <h5>Blog</h5>
+            <h5>Registrate</h5>
             <h5>Marcas</h5>
           </div>
           <div id = "disclaimer"> 
