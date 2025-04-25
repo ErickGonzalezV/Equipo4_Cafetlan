@@ -39,7 +39,9 @@ body{
     margin-left: 30px;
     color: #3B3923;
   }
-
+  .color-login{
+    color:#3B3923;;
+  }
  h1{
    font-family: "Oxygen", sans-serif;
  }
