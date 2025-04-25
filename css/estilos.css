@@ -1,6 +1,3 @@
-
-
-
 html{
    --bg-color:#736F4E;
    --font-color:#3B3923;
@@ -12,15 +9,22 @@ html{
 body{
    background-color: var(--bg-color);
    color: var(--hg-color);
+   width: 100%;
+   height: auto;
 }
 
+.card {
+  width: auto;
+  border: 20px;
+  padding: 20px;
+  padding-top: 0px;
+  margin-top: -50px;
+}
     
-    div.container{
+div.container{
      margin: auto;
      display: flex;
-    
-  }
-
+}
  
  .fluid-container{
     background-color:var(--hg-color);
@@ -60,8 +64,6 @@ body{
   margin-top: 50px;
 }
 
-
-
 .row {
   justify-content: space-around;
   margin-bottom: 20px;
@@ -100,7 +102,15 @@ footer{
   align-items: center;
 }
 
+.responsive {
+  height: auto;
+  width: 100%;
+}
 
+.container {
+  width: auto;
+  border: 0px;
+}
 
 #footerDos {
   display: flex;
