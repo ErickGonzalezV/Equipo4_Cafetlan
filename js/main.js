@@ -19,23 +19,20 @@ const footer = document.getElementById("footer")
             <a class="nav-link" href="./productos.html">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Blog</a>
+            <a class="nav-link" href="./formRegistro.html">Regístrate</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./contacto.html">Contáctanos</a>
           </li>
         </ul>
       </div>
-
-      <div class="icons d-flex ms-auto ">
+<div class="icons d-flex ms-auto ">
         <ul class="navbar-nav">
-          <li class="nav-link">
-            <i class="bi bi-search" href="#"></i>
-          <li class="nav-link">
+           <li class="nav-link" >
             <i class="bi bi-cart2"></i>
           </li>
           <li class="nav-link">
-          <a href="./login.html">
+          <a href="./login.html" class="color-login">
             <i class="bi bi-person-fill" href="./login.html"></i>
             </a>
           </li>
@@ -54,15 +51,29 @@ const footer = document.getElementById("footer")
       <div id="footerDos">
           <div class="proyectoFooter">
             <h3>Proyecto</h3>
-            <h5>Sobre Nosotros</h5>
-            <h5>Tienda</h5>
-            <h5>Únete</h5>
+            <a href="./nosotros.html" style="text-decoration: none; color: inherit;"><h5>Sobre Nosotros</h5></a>
+            <a href="./productos.html" style="text-decoration: none; color: inherit;"><h5>Tienda</h5></a>
+            <a href="./formRegistro.html" style="text-decoration: none; color: inherit;"> <h5>Únete</h5></a>
         </div>
         <div id="contactoFooter">
-            <h3>Contacto</h3>
+           <a href="./contacto.html" style="text-decoration: none; color: inherit;">  <h3>Contacto</h3></a>
             <h5>Ayuda</h5>
-            <h5>Blog</h5>
+            <h5>Registrate</h5>
             <h5>Marcas</h5>
+          </div>
+          <div id = "disclaimer"> 
+          <p>
+  <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Aviso
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      IMPORTANTE: Ésta página solo es un proyecto estudiantil. No se comercia con ningún contenido mostrado aquí. 
+    </div>
+  </div>
+</div>
           </div>
       </div>
     </footer>  `)
