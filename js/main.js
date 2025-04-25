@@ -64,6 +64,20 @@ const footer = document.getElementById("footer")
             <h5>Blog</h5>
             <h5>Marcas</h5>
           </div>
+          <div id = "disclaimer"> 
+          <p>
+  <button class="btn btn-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample">
+    Aviso
+  </button>
+</p>
+<div style="min-height: 120px;">
+  <div class="collapse collapse-horizontal" id="collapseWidthExample">
+    <div class="card card-body" style="width: 300px;">
+      IMPORTANTE: Ésta página solo es un proyecto estudiantil. No se comercia con ningún contenido mostrado aquí. 
+    </div>
+  </div>
+</div>
+          </div>
       </div>
     </footer>  `)
  
