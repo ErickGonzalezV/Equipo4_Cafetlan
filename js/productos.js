@@ -1,5 +1,5 @@
 function addItem(item){
-    //producto 1
+    //producto 1.1
     const itemHTML = '<div class="card" style="width: 18rem;">\n' +
         '    <img src="'+"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952486/Y2FmZUFydGVzYW5hbFR6dWFjYWxsaV9hd3VhYzY=/drilldown" +'" class="card-img-top" alt="image">\n' +
         '    <div class="card-body">\n' +
