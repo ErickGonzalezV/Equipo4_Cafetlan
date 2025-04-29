@@ -72,32 +72,38 @@ document.getElementById('form')
 /////////////////////////////////fin de la validacion de email////////////////////////////////
 
   //Validación teléfono
-  const regexNumber = new RegExp ("^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,5}$");
-    if (telefono === "") {
-        Swal.fire({
-            title: "Algo sucedió!",
-            text: "El número proporcionado no es válido.",
-            icon: "error"
-            });
-            return;
-    } else if (!regexNumber.test(telefono)) {
-            Swal.fire({
-            title: "¡Listo!",
-            text: "Tu número telefónico fue validado",
-            icon: "success"
-            });
-            return;
-          } //Termina validación teléfono
+  const regexNumber = /^(?=.*[1-9])[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+
+  if (telefono === "" || !regexNumber.test(telefono)) {
+      Swal.fire({
+          title: "Algo sucedió!",
+          text: "El número proporcionado no es válido.",
+          icon: "error"
+      });//Primera validacion de telefono
+      return;
+  }
+  digits = telefono;
+  const allSame = digits.split('').every(d => d === digits[0]);
+  if (allSame) {
+      Swal.fire({
+          title: "Número inválido",
+          text: "El número no puede tener todos los dígitos iguales.",
+          icon: "error"
+      });// Verifica si todos los dígitos son iguales
+      return;
+  }
 
 
     // Validación de mensaje  con expresion regular
-    const mensajeRegex = /^[A-Za-z][A-Za-z0-9 "$%()&*?¿!¡/]*$/;
+    const mensajeRegex = /^(?=.{10,500}$)[A-Za-zÁÉÍÓÚÜÑáéíóúüñ][A-Za-zÁÉÍÓÚÜÑáéíóúüñ0-9\s.,;:¡!¿?\-_"$%()&*@]*$/;
     if (!mensajeRegex.test(mensaje)) {
-      alert("el mensaje es invalido");
-  }else{
-      alert("el mensaje es valido");
+      Swal.fire({
+        icon: "error",
+        title: "Mensaje inválido",
+        text: "El mensaje debe contener mínimo 10 caracteres y máximo 500 e iniciar con una letra."
+      });
+      return;
   }//fin validación mensaje
-
 
     btn.textContent = 'Enviando...';
 
@@ -112,6 +118,7 @@ document.getElementById('form')
           title: "¡Enviado!",
           text: "Tu mensaje fue enviado con éxito."
         });
+        this.reset();
       })
       .catch((err) => {
         btn.textContent = 'Enviar';

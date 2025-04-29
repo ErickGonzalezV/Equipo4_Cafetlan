@@ -1,3 +1,4 @@
+
 function addItem(item){
     //producto 1
     const itemHTML = '<div class="card" style="width: 18rem;">\n' +
@@ -150,3 +151,11 @@ addItem({'name':'juice',
 addItem({'name':'Tayto',
     'img':'https://www.irishtimes.com/polopoly_fs/1.4078148!/image/image.jpg',
     'description':'Cheese & Onion Chips'})
+
+fetch("../JSON/products.json")
+  .then(response => response.json())
+  .then(data => {
+    localStorage.setItem("miJson", JSON.stringify(data));
+    console.log("Json cargado en Local Storage");
+  })
+  .catch(error => console.error("Error al cargar el JSON", error));
