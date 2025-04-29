@@ -58,7 +58,7 @@ const footer = document.getElementById("footer")
         <div id="contactoFooter">
            <a href="./contacto.html" style="text-decoration: none; color: inherit;">  <h3>Contacto</h3></a>
             <h5>Ayuda</h5>
-            <h5>Registrate</h5>
+            <h5>Regístrate</h5>
             <h5>Marcas</h5>
           </div>
           <div id = "disclaimer"> 
