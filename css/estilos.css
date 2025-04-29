@@ -1,6 +1,3 @@
-
-
-
 html{
    --bg-color:#736F4E;
    --font-color:#3B3923;
@@ -12,14 +9,22 @@ html{
 body{
    background-color: var(--bg-color);
    color: var(--hg-color);
+   width: 100%;
+   height: auto;
 }
 
+.card {
+  width: auto;
+  border: 20px;
+  padding: 20px;
+  padding-top: 0px;
+  margin-top: -50px;
+}
     
-    div.container{
+div.container{
      margin: auto;
      display: flex;
-    
-  }
+}
  
  .fluid-container{
     background-color:var(--hg-color);
@@ -32,6 +37,15 @@ body{
      font-family: "Oxygen", sans-serif;
      
   }
+  .navbar-brand{
+    font-family:"Crimson Text", serif;
+    font-size: 30px;
+    margin-left: 30px;
+    color: #3B3923;
+  }
+  .color-login{
+    color:#3B3923;;
+  }
  h1{
    font-family: "Oxygen", sans-serif;
  }
@@ -41,8 +55,9 @@ body{
 
  .container#proyecto{
    justify-content:flex-end;
-   margin-top: 50px;
+   margin-top: 20px;
    font-family: "Raleway", sans-serif;;
+   padding: 40px;
  }
 
  #carouselCafetlan{
@@ -61,11 +76,22 @@ body{
   background-color: var(--bg-color);
 }
 
+.btn-primary{
+  background-color: var(--vino-color);
+  border-color: var(--vino-color);
+
+}
+.btn-primary:hover {
+  background-color: var(--hg-color);
+  border-color: var(--hg-color);
+
+}
+
 footer{
-  background-color: #B4C292;
-  color: #3B3923;
+  background-color: #3B3923;
+  color: #B4C292;
   
-  padding: 20px;
+  padding: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -78,10 +104,54 @@ footer{
   align-items: center;
 }
 
+.responsive {
+  height: auto;
+  width: 100%;
+}
+
+.container {
+  width: auto;
+  border: 0px;
+}
+
 #footerDos {
   display: flex;
   justify-content: space-between; 
-  gap: 2rem; 
+  padding: 10px;
+  gap: 60px; 
   font-family: 'Oxygen';
   font-style: normal;
+  font-size: 20px;
 }
+
+footer h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+footer h5 {
+  font-size: 14px;
+  margin-bottom: 10px; 
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.imagen-carrusel {
+  height: 500px;
+  width: 300px;
+}
+
+/* Apartado de contacto */
+
+#contacto{
+  margin-top: 100px;
+}
+
+#labelContacto{
+  font-family: "Oxygen", sans-serif;
+}
+#email{
+  font-family: "Raleway", sans-serif;
+}
+
+/* FIn del apartado de contacto */
