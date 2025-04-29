@@ -7,15 +7,16 @@ En este proyecto se esta usando:
 1. HTML
 2. CSS
 3.Bootstrap
+4.JavaScript
 ```
 
 ```
 Los integrantes de este equipo son:
 1. Daniela Pereyra
 2. Neira Plascencia
-3. Carolina Gonzales Zavala
+3. Carolina Gonzáles Zavala
 4. Daniel S Álvarez Rodriguez
 5. Luis Isaac Méndez Villegas
-6. Erick Gonzales
+6. Erick F González Vargas
 7. Harold Iván Gutiérrez Romero
 ```
