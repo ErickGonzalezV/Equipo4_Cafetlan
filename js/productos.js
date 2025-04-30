@@ -1,187 +1,121 @@
-<<<<<<< HEAD
-function addItem(item){
-    //producto 1.1
-const itemHTML = '<div class="card" style="width: 18rem;">\n' +
-        '    <img src="'+"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952486/Y2FmZUFydGVzYW5hbFR6dWFjYWxsaV9hd3VhYzY=/drilldown" +'" class="card-img-top" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">`+Cafe Artesanal T-Zacualli+`</h5>\n' +
-        '        <p class="card-text">'+"Venta de café artesanal tostado en comal de barro con leña, orgánico y de altura originario de Zacualpan de Amilpas Morelos. Combinación de Granos y grano caracolillo."+'</p>\n' +
-        '        <a href="#" class="btn btn-primary">Add</a>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
-        //producto 2
-        '<div class="card" style="width: 18rem;">\n' +
-        '    <img src="'+"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952490/Q2FmZUNhc2FNYXlvcl9nNTUyZWs=/drilldown" +'" class="card-img-top" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+"Cafe Casa Mayor"+'</h5>\n' +
-        '        <p class="card-text">'+"Café calidad Pluma, de  variedad Thypica Arábica. Café Planchuela. El café de Huatulco, cultivado en la región costera de Oaxaca, destaca por su sabor suave y afrutado, con notas de nuez y un toque sutil de chocolate. Su origen en tierras altas le otorga una acidez equilibrada y un aroma fresco."+'</p>\n' +
-        '        <a href="#" class="btn btn-primary">Add</a>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
-                //producto 3
-                '<div class="card" style="width: 18rem;">\n' +
-                '    <img src="'+"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952495/Q2FmZURlT2xsYV90b2Z3dGY=/drilldown" +'" class="card-img-top" alt="image">\n' +
-                '    <div class="card-body">\n' +
-                '        <h5 class="card-title">'+"Cafe Alianza De Olla"+'</h5>\n' +
-                '        <p class="card-text">'+"El café Alianza de Olla nos brinda una nostalgia inigualable, al transportarnos a aquella cocina de la abuelita que preparaba el cafecito de la tarde para toda la familia, con ingredientes naturales y deliciosos. Este producto incluye azúcar y canela."+'</p>\n' +
-                '        <a href="#" class="btn btn-primary">Add</a>\n' +
-                '    </div>\n' +
-                '</div>\n' +
-                '<br/>';
-                //producto 4
-                '<div class="card" style="width: 18rem;">\n' +
-                '    <img src="'+"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952493/Q2FmZUZ1c2lvblRyZXNSZWdpb25lc19qZ3p0Zmc=/drilldown" +'" class="card-img-top" alt="image">\n' +
-                '    <div class="card-body">\n' +
-                '        <h5 class="card-title">'+"Cafe Fusión Tres Regiones"+'</h5>\n' +
-                '        <p class="card-text">'+"Mezcla de tres granos de café originarios de Veracruz, Oaxaca y Chiapas fusion de tres regiones(Totonaco, Chontal y Mixe), sabemos la importancia del tostado y el sabor con más de 20 años de experiencia en el arte del tostado con aire caliente."+'</p>\n' +
-                '        <a href="#" class="btn btn-primary">Add</a>\n' +
-                '    </div>\n' +
-                '</div>\n' +
-                '<br/>';
-                //producto 5
-                '<div class="card" style="width: 18rem;">\n' +
-                '    <img src="'+"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952487/Q2FmZUxhY2hpT3JnYW5pY19kdGo1azE=/drilldown" +'" class="card-img-top" alt="image">\n' +
-                '    <div class="card-body">\n' +
-                '        <h5 class="card-title">'+"Cafe Lachi Organic's"+'</h5>\n' +
-                '        <p class="card-text">'+"Te traemos este café criollo, cosechado por maestros artesanos de la región y tostado a la leña que le da un sabor exquisito, producido en la Sierra Norte de Oaxaca, una zona montañosa que integra la Sierra Madre Oriental a 1,200 MSNM.Café Molido Artesanal 100% puro cafe, tueste medio con notas a Caramelo, Chocolate y canela."+'</p>\n' +
-                '        <a href="#" class="btn btn-primary">Add</a>\n' +
-                '    </div>\n' +
-                '</div>\n' +
-                '<br/>';
-                        //producto 6
-        '<div class="card" style="width: 18rem;">\n' +
-        '    <img src="'+"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952495/Q2FmZUxhQ3VldmFfcmF3YW1h/drilldown" +'" class="card-img-top" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+"Cafe La Cueva"+'</h5>\n' +
-        '        <p class="card-text">'+"El café chiapaneco ofrece un perfil delicado con matices dulces y frutales, resultado de su cultivo en tierras ricas y climas de montaña. Es un café artesanal, de cuerpo medio y aroma envolvente. Perfecto para disfrutar en cualquier momento del día."+'</p>\n' +
-        '        <a href="#" class="btn btn-primary">Add</a>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
-                //producto 7
-                '<div class="card" style="width: 18rem;">\n' +
-                '    <img src="'+"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952493/Q2FmZUxhUmVnaW9uX2xucGdkZQ==/drilldown" +'" class="card-img-top" alt="image">\n' +
-                '    <div class="card-body">\n' +
-                '        <h5 class="card-title">'+"Cafe La Región"+'</h5>\n' +
-                '        <p class="card-text">'+"Café chiapaneco, cultivado en las montañas de Chiapas, México, se distingue por su sabor suave, notas florales y toques de chocolate. Producido a gran altura. Es un café de aroma intenso y acidez equilibrada. Ideal para quienes buscan una experiencia auténtica y aromática."+'</p>\n' +
-                '        <a href="#" class="btn btn-primary">Add</a>\n' +
-                '    </div>\n' +
-                '</div>\n' +
-                '<br/>';
-                        //producto 8
-        '<div class="card" style="width: 18rem;">\n' +
-        '    <img src="'+"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952495/Y2FmZU11amVyU2VycmFuYV9ibzhla3M=/drilldown" +'" class="card-img-top" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+"Cafe Mujer Serrana"+'</h5>\n' +
-        '        <p class="card-text">'+"Nuestro café nace en las montañas de la sierra nororiental de Puebla, es cultivado por familia indígenas nahuas y procesado de manera artesanal, dando como resultado un café de altura de excelente calidad. Ideal para preparar café de olla o en cafetera."+'</p>\n' +
-        '        <a href="#" class="btn btn-primary">Add</a>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
-        //producto 9
-        '<div class="card" style="width: 18rem;">\n' +
-        '    <img src="'+"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952491/Q2FmZVNhbnRhRWxlbmFfcDdjeWFw/drilldown" +'" class="card-img-top" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+"Cafe Santa Elena"+'</h5>\n' +
-        '        <p class="card-text">'+"Sabores ácidos y a frutos rojos, cuerpo intenso. Achocolatado, frutos rojos y acidez sutil. Ideal para un espresso con el sabor profundamente achocolatado que sólo los granos de cafe de Veracruz ofrecen. Intenso sabor a café tostado, cuerpo medio."+'</p>\n' +
-        '        <a href="#" class="btn btn-primary">Add</a>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
-                //producto 10
-                '<div class="card" style="width: 18rem;">\n' +
-                '    <img src="'+"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952490/Y2FmZVphcGF0aXN0YV9jZGNiYmc=/drilldown" +'" class="card-img-top" alt="image">\n' +
-                '    <div class="card-body">\n' +
-                '        <h5 class="card-title">'+"Cafe Zapatista"+'</h5>\n' +
-                '        <p class="card-text">'+"Café solidario de comercio justo de Chiapas (México), cultivado con prácticas ecológicas y cosechado con dignidad. Café 100% rebelde, apoya a las cooperativas zapatistas en resistencia."+'</p>\n' +
-                '        <a href="#" class="btn btn-primary">Add</a>\n' +
-                '    </div>\n' +
-                '</div>\n' +
-                '<br/>';
-                        //producto 11
-        '<div class="card" style="width: 18rem;">\n' +
-        '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+item.name+'</h5>\n' +
-        '        <p class="card-text">'+item.description+'</p>\n' +
-        '        <a href="#" class="btn btn-primary">Add</a>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
-                //producto 12
-                '<div class="card" style="width: 18rem;">\n' +
-                '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
-                '    <div class="card-body">\n' +
-                '        <h5 class="card-title">'+item.name+'</h5>\n' +
-                '        <p class="card-text">'+item.description+'</p>\n' +
-                '        <a href="#" class="btn btn-primary">Add</a>\n' +
-                '    </div>\n' +
-                '</div>\n' +
-                '<br/>';
-                        //producto 13
-        '<div class="card" style="width: 18rem;">\n' +
-        '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
-        '    <div class="card-body">\n' +
-        '        <h5 class="card-title">'+item.name+'</h5>\n' +
-        '        <p class="card-text">'+item.description+'</p>\n' +
-        '        <a href="#" class="btn btn-primary">Add</a>\n' +
-        '    </div>\n' +
-        '</div>\n' +
-        '<br/>';
-                //producto 14
-                '<div class="card" style="width: 18rem;">\n' +
-                '    <img src="'+item.img +'" class="card-img-top" alt="image">\n' +
-                '    <div class="card-body">\n' +
-                '        <h5 class="card-title">'+item.name+'</h5>\n' +
-                '        <p class="card-text">'+item.description+'</p>\n' +
-                '        <a href="#" class="btn btn-primary">Add</a>\n' +
-                '    </div>\n' +
-                '</div>\n' +
-                '<br/>';
-    const itemsContainer = document.getElementById("list-items");
+function addItem(item) {
+    // Crear el HTML para mostrar el producto en la interfaz
+    const itemHTML = `
+        <div class="col">
+            <div class="card h-100" style="width: 18rem; margin: auto;">
+                <img src="${item.img}" class="card-img-top" alt="image">
+                <div class="card-body d-flex flex-column">
+                    <h5 class="card-title">${item.name}</h5>
+                    <p class="card-text">${item.description}</p>
+                    <a href="#" class="btn btn-primary mt-auto" onclick="agregarAlCarrito(${JSON.stringify(item)})">Agregar al carrito</a>
+                </div>
+            </div>
+        </div>
+    `;
+    const itemsContainer = document.getElementById("product-container");
     itemsContainer.innerHTML += itemHTML;
-}
-=======
-fetch("../JSON/products.json")
-  .then(response => response.json())
-  .then(data => {
-    localStorage.setItem("miJson", JSON.stringify(data));
-    console.log("Json cargado en Local Storage");
-  })
-  .catch(error => console.error("Error al cargar el JSON", error));
->>>>>>> ec594bd8820094248b80c578bc8f966f7fb78eed
 
-  function addItem(item){
-        const itemHTML = '<div class="col-md-4 mb-4"> <div class="card h-100 bg-white shadow">\n' +
-            '    <img src="'+item.Image +'" class="card-img-top" alt="image">\n' +
-            '    <div class="card-body">\n' +
-            '        <h5 class="card-title">'+item.Title+'</h5>\n' +
-            '        <p class="card-text">'+item.Category+'</p>\n' +
-            '        <a href="#" class="btn btn-primary2">Agregar al carrito</a>\n' +
-            '    </div>\n' +
-            '</div>\n' +
-            '<br/>';
-        const itemsContainer = document.getElementById("list-items");
-        itemsContainer.innerHTML += itemHTML;
-    }
-    //itemscafes
-    addItem({"id": 1, "Title":"Café Artesanal T-Zacualli", "Región":"Morelos", "Price":320, "Description":"Venta de café artesanal tostado en comal de barro con leña, orgánico y de altura originario de Zacualpan de Amilpas Morelos. Combinación de Granos y grano caracolillo.", "Category":"Cafe Molido", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952486/Y2FmZUFydGVzYW5hbFR6dWFjYWxsaV9hd3VhYzY=/drilldown", "Rating":{"Rate":4.3,"Count":120}},)
-    addItem({"id": 2, "Title":"Café Casa Mayor", "Región":"Huatulco",  "Price":385, "Description":"Café calidad Pluma, de  variedad Thypica Arábica. Café Planchuela. El café de Huatulco, cultivado en la región costera de Oaxaca, destaca por su sabor suave y afrutado, con notas de nuez y un toque sutil de chocolate. Su origen en tierras altas le otorga una acidez equilibrada y un aroma fresco.", "Category":"Cafe Molido", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952490/Q2FmZUNhc2FNYXlvcl9nNTUyZWs=/drilldown", "Rating":{"Rate":4.2,"Count":98}},)
-    addItem({"id": 3, "Title":"Café Alianza De Olla", "Región":"Veracruz",  "Price":210, "Description":"El café Alianza de Olla nos brinda una nostalgia inigualable, al transportarnos a aquella cocina de la abuelita que preparaba el cafecito de la tarde para toda la familia, con ingredientes naturales y deliciosos. Este producto incluye azúcar y canela.", "Category":"Cafe Molido", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952495/Q2FmZURlT2xsYV90b2Z3dGY=/drilldown", "Rating":{"Rate":4.0,"Count":75}},)
-    addItem({"id": 4, "Title":"Café Fusión Tres Regiones", "Región":"Chiapas, Veracruz, Oaxaca",  "Price":280, "Description":"Mezcla de tres granos de café originarios de Veracruz, Oaxaca y Chiapas fusion de tres regiones(Totonaco, Chontal y Mixe), sabemos la importancia del tostado y el sabor con más de 20 años de experiencia en el arte del tostado con aire caliente.", "Category":"Cafe Molido", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952493/Q2FmZUZ1c2lvblRyZXNSZWdpb25lc19qZ3p0Zmc=/drilldown", "Rating":{"Rate":4.5,"Count":200}},)
-    addItem({"id": 5, "Title":"Café Lachi Organic's", "Región":"Oaxaca",  "Price":340, "Description":"Te traemos este café criollo, cosechado por maestros artesanos de la región y tostado a la leña que le da un sabor exquisito, producido en la Sierra Norte de Oaxaca, una zona montañosa que integra la Sierra Madre Oriental a 1,200 MSNM.Café Molido Artesanal 100% puro cafe, tueste medio con notas a Caramelo, Chocolate y canela.", "Category":"Cafe Molido", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952487/Q2FmZUxhY2hpT3JnYW5pY19kdGo1azE=/drilldown", "Rating":{"Rate":3.8,"Count":130}},)
-    addItem({"id": 6, "Title":"Café La Cueva", "Región":"Chiapas",  "Price":280, "Description":"El café chiapaneco ofrece un perfil delicado con matices dulces y frutales, resultado de su cultivo en tierras ricas y climas de montaña. Es un café artesanal, de cuerpo medio y aroma envolvente. Perfecto para disfrutar en cualquier momento del día.", "Category":"Cafe Molido", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952495/Q2FmZUxhQ3VldmFfcmF3YW1h/drilldown", "Rating":{"Rate":3.5,"Count":120}},)
-    addItem({"id": 7, "Title":"Café La Región", "Región":"Chiapas",  "Price":310, "Description":"Café chiapaneco, cultivado en las montañas de Chiapas, México, se distingue por su sabor suave, notas florales y toques de chocolate. Producido a gran altura. Es un café de aroma intenso y acidez equilibrada. Ideal para quienes buscan una experiencia auténtica y aromática.", "Category":"Cafe Molido", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952493/Q2FmZUxhUmVnaW9uX2xucGdkZQ==/drilldown", "Rating":{"Rate":4.2,"Count":95}},)
-    addItem({"id": 8, "Title":"Café Mujer Serrana", "Región":"Puebla",  "Price":410, "Description":"Nuestro café nace en las montañas de la sierra nororiental de Puebla, es cultivado por familia indígenas nahuas y procesado de manera artesanal, dando como resultado un café de altura de excelente calidad. Ideal para preparar café de olla o en cafetera.", "Category":"Cafe Molido", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952495/Y2FmZU11amVyU2VycmFuYV9ibzhla3M=/drilldown", "Rating":{"Rate":4.7,"Count":180}},)
-    addItem({"id": 9, "Title":"Café Santa Elena", "Región":"Veracruz",  "Price":330, "Description":"Sabores ácidos y a frutos rojos, cuerpo intenso. Achocolatado, frutos rojos y acidez sutil. Ideal para un espresso con el sabor profundamente achocolatado que sólo los granos de cafe de Veracruz ofrecen. Intenso sabor a café tostado, cuerpo medio.", "Category":"Cafe Molido", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952491/Q2FmZVNhbnRhRWxlbmFfcDdjeWFw/drilldown", "Rating":{"Rate":3.9,"Count":150}},)
-    addItem({"id": 10, "Title":"Café Zapatista", "Región":"Chiapas",  "Price":320, "Description":"Café solidario de comercio justo de Chiapas (México), cultivado con prácticas ecológicas y cosechado con dignidad. Café 100% rebelde, apoya a las cooperativas zapatistas en resistencia.", "Category":"Cafe Molido", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745952490/Y2FmZVphcGF0aXN0YV9jZGNiYmc=/drilldown", "Rating":{"Rate":4.0,"Count":138}},)
-    //itemscafeteras
-    addItem({"id": 11, "Title":"Cafetera De Peltre p/ 2 lts", "Price":280, "Description":"La cafetera de peltre, con su diseño clásico y resistente, es ideal para preparar café de manera tradicional. Su material asegura una distribución uniforme del calor, garantizando un sabor delicioso en cada taza. Perfecta para disfrutar de una experiencia auténtica y duradera. Ideal para hogares y viajes. Compatible con estufa de inducción", "Category":"Cafeteras", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745953834/Q2FmZXRlcmFEZVBlbHRyZV9veGs3ZzQ=/drilldown", "Rating":{"Rate":4.0,"Count":135}},)
-    addItem({"id": 12, "Title":"Cafetera De Barro p/ 2 lt.", "Price":210, "Description":"Fabricada pro artesanos de Puebla (Zona de los Volcanes), esta cafetera/Tetera con capacidad de 2 lt. Aportara un sabor inigualable a sus preparaciones, libre de plomo, debe curarse antes de utilizarse. ", "Category":"Cafeteras", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745953833/Q2FmZXRlcmFEZUJhcnJvX2R1ZHN3eQ==/drilldown", "Rating":{"Rate":3.5,"Count":50}},)
-    addItem({"id": 13, "Title":"Cafetera De Prensa Francesa Casa Litus p/ 2 lts", "Price":649, "Description":"PREPARA DELICIOSO CAFÉ CON EL MÉTODO MÁS ELEGANTE: Para elaborar café con la prensa francesa sólo tienes que agregar café molido y agua caliente. Mezcla por dos minutos y presiona lentamente el filtro al finalizar y tendrás delicioso café recién preparado en pocos minutos", "Category":"Cafeteras", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745953834/Q2FmZXRlcmFQcmVuc2FGcmFuY2VzYV9iZGJyYWw=/drilldown", "Rating":{"Rate":4.3,"Count":180}},)
-    addItem({"id": 14, "Title":"Cafetera De Prensa Italiana p/ 6 tazas", "Price":1199, "Description":"Diseño duradero e innovador: cuidadosamente fabricado con aluminio fuerte y duradero. Proporciona una distribución completa y uniforme del calor para mejorar el sabor y el aroma", "Category":"Cafeteras", "Image":"https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1745953834/Q2FmZXRlcmFQcmVuc2FJdGFsaWFuYV9qYXprdjg=/drilldown", "Rating":{"Rate":4.7,"Count":250}},)
-    addItem({"id": 14, "Title":"Chefman Cafetera por Goteo p/ 12 tazas", "Price":899, "Description":"Capacidad de 12 tazas Prepara el café a tu manera, cuando quieras y con la intensidad que desees! Programa tu cafetera Chefman con hasta 24 horas", "Category":"Cafeteras", "Image":"https://chefman.com.mx/cdn/shop/products/square-coffee-maker-medium-stainless-steel-8_4b4efdb3-864b-40b9-945e-6b57f4bc9f02.jpg?v=1640810840&width=1080", "Rating":{"Rate":4.7,"Count":350}})
+    // Guardar el producto en el localStorage
+    guardarProductoEnLocalStorage(item);
+}
+
+function guardarProductoEnLocalStorage(item) {
+    // Recuperar los productos del localStorage, o inicializar un array vacío si no hay datos
+    let productos = JSON.parse(localStorage.getItem('productos')) || [];
     
-    
+    // Agregar el nuevo producto al array
+    productos.push(item);
+
+    // Guardar el array actualizado en el localStorage
+    localStorage.setItem('productos', JSON.stringify(productos));
+}
+// Lista de productos
+addItem({
+    name: "Cafe Artesanal T-Zacualli",
+    img: "https://th.bing.com/th/id/R.ead1c26842a30f348f8d1194cf2c3c19?rik=QILow0Juljya8g&riu=http%3a%2f%2f3.bp.blogspot.com%2f-SMWUIYyH-PI%2fVhHXoQBCk1I%2fAAAAAAAABGw%2fVI2bFf05IJc%2fs1600%2funtitled-25-14-1.jpg&ehk=C6G9oXjT65%2fdNkyoBMjeNSpnc0YpG1a0e19QaeCuTQo%3d&risl=&pid=ImgRaw&r=0",
+    description: "Venta de café artesanal tostado en comal de barro con leña, orgánico y de altura originario de Zacualpan de Amilpas Morelos. Combinación de Granos y grano caracolillo."
+});
+
+addItem({
+    name: "Cafe Casa Mayor",
+    img: "https://i2.wp.com/www.cafecasamayor.com/wp-content/uploads/2021/04/IMG_0689.jpg?fit=960%2C720&ssl=1",
+    description: "Café calidad Pluma, de variedad Thypica Arábica. Café Planchuela. Sabor suave y afrutado, con notas de nuez y chocolate."
+});
+
+addItem({
+    name: "Cafe Alianza De Olla",
+    img: "https://hebmx.vtexassets.com/arquivos/ids/671496-800-800?v=638521703397370000&width=800&height=800&aspect=true",
+    description: "Café con azúcar y canela. Nostalgia inigualable, como el que preparaba la abuelita para la familia."
+});
+
+addItem({
+    name: "Cafe Fusión Tres Regiones",
+    img: "https://th.bing.com/th/id/OIP.emDs1ttm5ViftMhkmG5_twHaNL?rs=1&pid=ImgDetMain",
+    description: "Fusión de granos de Veracruz, Oaxaca y Chiapas. Tostado con más de 20 años de experiencia."
+});
+
+addItem({
+    name: "Cafe Lachi Organic's",
+    img: "https://m.media-amazon.com/images/I/719sPpDpEGL._AC_SL1500_.jpg",
+    description: "Café criollo tostado a la leña. Notas de caramelo, chocolate y canela."
+});
+
+addItem({
+    name: "Cafe La Cueva",
+    img: "https://scontent.fmex42-1.fna.fbcdn.net/v/t1.6435-9/194544410_4342733172426284_6017601331772684718_n.jpg",
+    description: "Perfil delicado, matices dulces y frutales. Cultivado en climas de montaña de Chiapas."
+});
+
+addItem({
+    name: "Cafe La Región",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1745952495/cafeMujerSerrana_bo8eks.png",
+    description: "Café chiapaneco con sabor suave, notas florales y toques de chocolate."
+});
+
+addItem({
+    name: "Cafe Mujer Serrana",
+    img: "https://th.bing.com/th/id/OIP.a-1Dfm1iXzCmOGC3l1uMpwHaHW?rs=1&pid=ImgDetMain",
+    description: "Cultivado por familias indígenas nahuas en Puebla. Procesado de manera artesanal."
+});
+
+addItem({
+    name: "Cafe Santa Elena",
+    img: "https://th.bing.com/th/id/OIP.DFP0PWyd02Tx7UMyM_Ay8gHaHa?rs=1&pid=ImgDetMain",
+    description: "Café de Veracruz con sabor achocolatado, acidez sutil y notas a frutos rojos."
+});
+
+addItem({
+    name: "Cafe Zapatista",
+    img: "https://schoolsforchiapas.org/wp-content/uploads/2014/04/20230705_133747si-1024x1024.jpg",
+    description: "Café solidario y de comercio justo de Chiapas. Cultivado con prácticas ecológicas."
+});
+
+addItem({
+    name: "Cafetera De Peltre p/ 2 lts",
+    img: "https://m.media-amazon.com/images/I/51v63G5FM1S._AC_SL1000_.jpg",
+    description: "Diseño clásico, ideal para preparar café tradicional. Compatible con estufa de inducción."
+});
+
+addItem({
+    name: "Cafetera De Barro p/ 2 lt.",
+    img: "https://http2.mlstatic.com/D_NQ_NP_803876-MLM71312557298_082023-O.webp",
+    description: "Hecha por artesanos poblanos. Aporta sabor único, libre de plomo."
+});
+
+addItem({
+    name: "Cafetera De Prensa Francesa Casa Litus p/ 2 lts",
+    img: "https://www.cyberpuerta.mx/img/product/XL/CP-CASALITUS-83236-Bl-1.jpg",
+    description: "Método elegante para preparar café. Simple, rápido y delicioso."
+});
+
+addItem({
+    name: "Cafetera De Prensa Italiana p/ 6 tazas",
+    img: "https://i5-mx.walmartimages.com/mg/gm/3pp/asr/d24a4ef1-819c-494a-abdc-65bb2ab59ead.01a0b2befa7a1f74fa1139f235b28203.jpeg",
+    description: "Fabricada con aluminio duradero. Proporciona distribución uniforme del calor."
+});
+
+addItem({
+    name: "Chefman Cafetera por Goteo p/ 12 tazas",
+    img: "https://chefman.com.mx/cdn/shop/products/square-coffee-maker-medium-stainless-steel-8_4b4efdb3-864b-40b9-945e-6b57f4bc9f02.jpg",
+    description: "Capacidad de 12 tazas. Programable hasta 24 horas. Ajusta la intensidad a tu gusto."
+});
