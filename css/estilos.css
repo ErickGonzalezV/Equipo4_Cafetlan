@@ -155,3 +155,30 @@ footer h5 {
 }
 
 /* FIn del apartado de contacto */
+/*Productos*/
+#list-items {
+  justify-content: center;
+  color: var(--font-color);
+}
+#list-items.card-title{
+  font-family: "Oxygen", sans-serif;
+  
+
+}
+.card-text{
+  font-family: "Raleway", sans-serif;
+
+}
+.btn-primary2{
+  background-color: var(--vino-color);
+  border-color: var(--vino-color);
+  color: beige;
+
+  
+}
+.btn-primary2:hover {
+  background-color: var(--coff-color);
+  border-color: var(--coff-color);
+  color: beige;
+
+}
