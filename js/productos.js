@@ -62,13 +62,13 @@ addItem({
 
 addItem({
     name: "Cafe La Cueva",
-    img: "https://scontent.fmex42-1.fna.fbcdn.net/v/t1.6435-9/194544410_4342733172426284_6017601331772684718_n.jpg",
+    img: "https://http2.mlstatic.com/cafe-de-chiapas-de-altura-puro-y-organico-D_NQ_NP_631625-MLM25464309031_032017-F.jpg",
     description: "Perfil delicado, matices dulces y frutales. Cultivado en climas de montaña de Chiapas."
 });
 
 addItem({
     name: "Cafe La Región",
-    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1745952495/cafeMujerSerrana_bo8eks.png",
+    img: "https://th.bing.com/th/id/OIP.Vfe5h9wLKaBvLFaMr-6ovAHaJ8?rs=1&pid=ImgDetMain",
     description: "Café chiapaneco con sabor suave, notas florales y toques de chocolate."
 });
 
