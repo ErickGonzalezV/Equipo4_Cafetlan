@@ -78,6 +78,18 @@ document.getElementById('form').addEventListener('submit', function(event) {
                 <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
         `;
+
+        const registro={
+            nombre,
+            descripcion,
+            categoria,
+            precio,
+            imagen
+        };
+    
+        const jsonProd=JSON.stringify(registro);
+        localStorage.setItem('producto',jsonProd);
+
         this.reset();
     });
 
