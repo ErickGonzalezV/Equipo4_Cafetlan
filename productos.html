@@ -32,23 +32,30 @@
 </head>
 
 <body>
-    <main class="container">
+    <main class="container" style="margin-top: 100px;">
         <h1>Productos</h1>
         <!-- Barra nav -->
     <main class="container" id="navbar"> 
         <!-- Fin barra nav -->
     </main>
-    <nav>
+    <!-- <nav>
         <button onclick="filtrarPorCategoria('Cafe Molido')">Café Molido</button>
         <button onclick="filtrarPorCategoria('Cafeteras')">Cafeteras</button>
         <button onclick="mostrarTodos()">Todos</button>
-      </nav>
+      </nav> -->
     
       <main>
-        <div id="product-container" class="row row-cols-1 row-cols-md-3 g-4">
+        <div id="product-container" class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 50px;">
           <!-- Aquí van las cards -->
         </div>
       </main>
+      <!-- Producto del local storage -->
+      <main>
+        <div id="product-container-local" class="row row-cols-1 row-cols-md-3 g-4" style="margin-top: 50px;">
+          <!-- Aquí van las cards -->
+        </div>
+      </main>
+
 <!-- FOOTER  -->
 <div id="footer">
     <div style="min-height: 120px;">
@@ -67,6 +74,14 @@ style="top: 50%; right: 20px; transform: translateY(-50%);
         width: 60px; height: 60px;
         display: flex; align-items: center; justify-content: center; font-size: 24px;">
 <i class="bi-cart"></i>
+</a>
+
+<!--botón flotante -->
+<a href="formProductos.html" class="btn btn-primary rounded-circle position-fixed shadow"
+style="top: 40%; right: 20px; transform: translateY(-50%);
+        width: 60px; height: 60px;
+        display: flex; align-items: center; justify-content: center; font-size: 24px;">
+<i class="bi bi-plus-lg"></i>
 </a>
 
     <script src="./js/main.js"></script>
