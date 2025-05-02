@@ -90,6 +90,10 @@ document.getElementById('form').addEventListener('submit', function(event) {
             precio,
             imagen: imagenUrl
         };
+        const form = document.getElementById("form");
+        form.reset(); 
+        imagenInput.value = '';
+        previewContainer.innerHTML = '';
 
         let productos = [];
         try {
@@ -120,7 +124,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
         mostrarProductosDeLocalStorage();
 
         this.reset();
-
+      
         // window.location.href = '/productos.html';
     }, 1000);
 
