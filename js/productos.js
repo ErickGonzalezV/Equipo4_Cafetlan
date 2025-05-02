@@ -1,5 +1,5 @@
-const jsonProd=localStorage.getItem('producto');
-const prodNuevo=JSON.parse(jsonProd);
+const jsonProd=localStorage.getItem('productos');
+const prodNuevo=JSON.parse(jsonProd); 
 
 function addItem(item) {
     // Crear el HTML para mostrar el producto en la interfaz
@@ -22,9 +22,9 @@ function addItem(item) {
     guardarProductoEnLocalStorage(item);
 }
 
-function addItem2(item) {
+ /* function addItem2(item) {
     // Crear el HTML para mostrar el producto en la interfaz
-    const itemHTML = `
+     const itemHTML = `
             <div class="col-md-4 mb-4"> <div class="card h-100 bg-white shadow">
                 <img src="${prodNuevo.imagen}" class="card-img-top" alt="image">
                 <div class="card-body">
@@ -35,14 +35,14 @@ function addItem2(item) {
                 </div>
             </div>
           <br/>
-    `;
+    `; 
     const itemsContainer = document.getElementById("product-container");
     itemsContainer.innerHTML += itemHTML;
       // Guardar el producto en el localStorage
       guardarProductoEnLocalStorage(item);
-}
+}   */
 
-function guardarProductoEnLocalStorage(item) {
+ function guardarProductoEnLocalStorage(item) {
     // Recuperar los productos del localStorage, o inicializar un array vacío si no hay datos
     let productos = JSON.parse(localStorage.getItem('productos')) || [];
     
@@ -51,7 +51,7 @@ function guardarProductoEnLocalStorage(item) {
 
     // Guardar el array actualizado en el localStorage
     localStorage.setItem('productos', JSON.stringify(productos));
-}
+} 
 // Lista de productos
 addItem({
     name: "Cafe Artesanal T-Zacualli",
@@ -157,3 +157,16 @@ addItem({
     description: "Capacidad de 12 tazas. Programable hasta 24 horas. Ajusta la intensidad a tu gusto.",
     price:1179,
 });
+
+// Mostrar productos agregados por el formulario
+/*  const productosGuardados = JSON.parse(localStorage.getItem('productos')) || [];
+
+productosGuardados.forEach(producto => {
+    addItem({
+        name: producto.nombre,
+        img: producto.imagen,
+        description: producto.descripcion,
+        price: producto.precio
+    });
+});
+ */
