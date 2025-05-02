@@ -1,24 +1,27 @@
-const jsonProd=localStorage.getItem('productos');
-const prodNuevo=JSON.parse(jsonProd); 
+// Leer datos de localStorage
+const jsonProd = localStorage.getItem('productos');
+const prodNuevo = jsonProd ? JSON.parse(jsonProd) : [];
+const jsonProdAgregado = localStorage.getItem('producto');
+const prodAgregado = jsonProdAgregado ? JSON.parse(jsonProdAgregado) : [];
 
 function addItem(item) {
-    // Crear el HTML para mostrar el producto en la interfaz
     const itemHTML = `
-    <div class="col-md-4 mb-4"> <div class="card h-100 bg-white shadow">
-    <img src="${item.img}" class="card-img-top" alt="image">
-    <div class="card-body">
-        <h5 class="card-title">${item.name}</h5>
-        <p class="card-text">${item.description}</p>
-        <p class="card-text">Precio: $${item.price}</p>
-        <a href="#" class="btn btn-primary mt-auto" onclick="agregarAlCarrito(${JSON.stringify(item)})">Agregar al carrito</a>
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 bg-white shadow">
+            <img src="${item.img}" class="card-img-top" alt="image">
+            <div class="card-body">
+                <h5 class="card-title">${item.name}</h5>
+                <p class="card-text">${item.description}</p>
+                <p class="card-text">Precio: $${item.price}</p>
+                <a href="#" class="btn btn-primary mt-auto" onclick="agregarAlCarrito(${JSON.stringify(item)})">Agregar al carrito</a>
+            </div>
+        </div>
+        <br/>
     </div>
-</div>
-<br/>
     `;
     const itemsContainer = document.getElementById("product-container");
     itemsContainer.innerHTML += itemHTML;
 
-    // Guardar el producto en el localStorage
     guardarProductoEnLocalStorage(item);
 }
 
@@ -42,16 +45,79 @@ function addItem(item) {
       guardarProductoEnLocalStorage(item);
 }   */
 
- function guardarProductoEnLocalStorage(item) {
-    // Recuperar los productos del localStorage, o inicializar un array vacío si no hay datos
+function guardarProductoEnLocalStorage(item) {
     let productos = JSON.parse(localStorage.getItem('productos')) || [];
-    
-    // Agregar el nuevo producto al array
     productos.push(item);
-
-    // Guardar el array actualizado en el localStorage
     localStorage.setItem('productos', JSON.stringify(productos));
-} 
+}
+
+function addItemLocalStorage(objeto) {
+    const itemHTML = `
+    <div class="col-md-4 mb-4">
+        <div class="card h-100 bg-white shadow">
+            <img src="${objeto.img}" class="card-img-top" alt="image">
+            <div class="card-body">
+                <h5 class="card-title">${objeto.nombre}</h5>
+                <p class="card-text">${objeto.descripcion}</p>
+                <p class="card-text">Precio: $${objeto.precio}</p>
+                <a href="#" class="btn btn-primary mt-auto" onclick="agregarAlCarrito(${JSON.stringify(objeto)})">Agregar al carrito</a>
+            </div>
+        </div>
+        <br/>
+    </div>
+    `;
+    const itemsContainer = document.getElementById("product-container-local");
+    itemsContainer.innerHTML += itemHTML;
+
+    guardarProductoEnLocalStorage2(objeto);
+}
+
+function guardarProductoEnLocalStorage2(objeto) {
+    let productos = JSON.parse(localStorage.getItem('producto'));
+    if (!Array.isArray(productos)) {
+        productos = [];
+    }
+    productos.push(objeto);
+    localStorage.setItem('producto', JSON.stringify(productos));
+}
+
+function mostrarProductosDeLocalStorage() {
+    let productos = JSON.parse(localStorage.getItem('producto'));
+    if (!Array.isArray(productos)) {
+        productos = [];
+    }
+
+    const itemsContainer = document.getElementById("product-container-local");
+    if (!itemsContainer) {
+        console.error("El contenedor 'product-container-local' no se encontró en el DOM.");
+        return;
+    }
+
+    itemsContainer.innerHTML = '';
+
+    productos.forEach(producto => {
+        const itemHTML = `
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 bg-white shadow">
+                <img src="${producto.imagen || ''}" class="card-img-top" alt="image">
+                <div class="card-body">
+                    <h5 class="card-title">${producto.nombre || 'Sin nombre'}</h5>
+                    <p class="card-text">${producto.descripcion || 'Sin descripción'}</p>
+                    <p class="card-text">Precio: $${producto.precio || 0}</p>
+                    <a href="#" class="btn btn-primary mt-auto" onclick="agregarAlCarrito(${JSON.stringify(producto)})">Agregar al carrito</a>
+                </div>
+            </div>
+            <br/>
+        </div>
+        `;
+        itemsContainer.innerHTML += itemHTML;
+    });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    mostrarProductosDeLocalStorage();
+});
+
 // Lista de productos
 addItem({
     name: "Cafe Artesanal T-Zacualli",
