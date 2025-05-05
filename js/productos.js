@@ -1,4 +1,7 @@
-const jsonProd=localStorage.getItem('productos');
+
+
+//primera parte comentada 
+/* const jsonProd=localStorage.getItem('productos');
 const prodNuevo=JSON.parse(jsonProd); 
 
 function addItem(item) {
@@ -20,7 +23,7 @@ function addItem(item) {
 
     // Guardar el producto en el localStorage
     guardarProductoEnLocalStorage(item);
-}
+} *///termina primera parte cometnada   
 
  /* function addItem2(item) {
     // Crear el HTML para mostrar el producto en la interfaz
@@ -42,7 +45,7 @@ function addItem(item) {
       guardarProductoEnLocalStorage(item);
 }   */
 
- function guardarProductoEnLocalStorage(item) {
+ /* function guardarProductoEnLocalStorage(item) {
     // Recuperar los productos del localStorage, o inicializar un array vacío si no hay datos
     let productos = JSON.parse(localStorage.getItem('productos')) || [];
     
@@ -51,7 +54,29 @@ function addItem(item) {
 
     // Guardar el array actualizado en el localStorage
     localStorage.setItem('productos', JSON.stringify(productos));
-} 
+} */ 
+ //intento 2
+    const productos = JSON.parse(localStorage.getItem('productos')) || [];
+
+productos.forEach(producto => {
+  addItem({
+    name: producto.nombre,
+    img: producto.imagen,
+    description: producto.descripcion,
+    price: producto.precio,
+  });
+});
+
+/* const nuevo = JSON.parse(localStorage.getItem('producto'));
+if (nuevo) {
+  addItem({
+    name: nuevo.nombre,
+    img: nuevo.imagen,
+    description: nuevo.descripcion,
+    price: nuevo.precio
+  });
+}
+ */
 // Lista de productos
 addItem({
     name: "Cafe Artesanal T-Zacualli",
