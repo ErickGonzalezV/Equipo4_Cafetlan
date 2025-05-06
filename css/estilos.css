@@ -177,19 +177,43 @@ footer h5 {
   font-family: "Oxygen", sans-serif;
 
 }
+.card-body{
+  padding-left: 100px;
+  padding-top: 30px;
+  padding-right: 60px;
+}
+@media (max-width: 768px) {
+  .card-body {
+    padding-left: 40px;
+    padding-top: 20px;
+    padding-right: 30px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 480px) {
+  .card-body {
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-right: 20px;
+    font-size: 0.8rem;
+  }
+}
 .card-title{
   font-family: "Oxygen", sans-serif;
   color: #131312;
+  font-weight: bold;
 
 }
 .card-subtitle{
   font-family: "Oxygen", sans-serif;
-  color:#B4C292;
-
+  font-weight:bold
 }
 .card-text{
   font-family: "Raleway", sans-serif;
   color: #131312;
+  font-size: 18px;
 }
 .btn-primary2{
   background-color: var(--vino-color);
