@@ -120,70 +120,70 @@ document.addEventListener('DOMContentLoaded', () => {
 
 // Lista de productos
 addItem({
-    name: "Cafe Artesanal T-Zacualli",
+    name: "Café Artesanal T-Zacualli",
     img: "https://th.bing.com/th/id/R.ead1c26842a30f348f8d1194cf2c3c19?rik=QILow0Juljya8g&riu=http%3a%2f%2f3.bp.blogspot.com%2f-SMWUIYyH-PI%2fVhHXoQBCk1I%2fAAAAAAAABGw%2fVI2bFf05IJc%2fs1600%2funtitled-25-14-1.jpg&ehk=C6G9oXjT65%2fdNkyoBMjeNSpnc0YpG1a0e19QaeCuTQo%3d&risl=&pid=ImgRaw&r=0",
     description: "Venta de café artesanal tostado en comal de barro con leña, orgánico y de altura originario de Zacualpan de Amilpas Morelos. Combinación de Granos y grano caracolillo.",
     price: 200,
 });
 
 addItem({
-    name: "Cafe Casa Mayor",
+    name: "Café Casa Mayor",
     img: "https://i2.wp.com/www.cafecasamayor.com/wp-content/uploads/2021/04/IMG_0689.jpg?fit=960%2C720&ssl=1",
     description: "Café calidad Pluma, de variedad Thypica Arábica. Café Planchuela. Sabor suave y afrutado, con notas de nuez y chocolate.",
     price: 370,
 });
 
 addItem({
-    name: "Cafe Alianza De Olla",
+    name: "Café Alianza De Olla",
     img: "https://hebmx.vtexassets.com/arquivos/ids/671496-800-800?v=638521703397370000&width=800&height=800&aspect=true",
     description: "Café con azúcar y canela. Nostalgia inigualable, como el que preparaba la abuelita para la familia.",
     price:228,
 });
 
 addItem({
-    name: "Cafe Fusión Tres Regiones",
+    name: "Café Fusión Tres Regiones",
     img: "https://th.bing.com/th/id/OIP.emDs1ttm5ViftMhkmG5_twHaNL?rs=1&pid=ImgDetMain",
     description: "Fusión de granos de Veracruz, Oaxaca y Chiapas. Tostado con más de 20 años de experiencia.",
     price:400,
 });
 
 addItem({
-    name: "Cafe Lachi Organic's",
+    name: "Café Lachi Organic's",
     img: "https://m.media-amazon.com/images/I/719sPpDpEGL._AC_SL1500_.jpg",
     description: "Café criollo tostado a la leña. Notas de caramelo, chocolate y canela.",
     price:200,
 });
 
 addItem({
-    name: "Cafe La Cueva",
+    name: "Café La Cueva",
     img: "https://http2.mlstatic.com/cafe-de-chiapas-de-altura-puro-y-organico-D_NQ_NP_631625-MLM25464309031_032017-F.jpg",
     description: "Perfil delicado, matices dulces y frutales. Cultivado en climas de montaña de Chiapas.",
     price:240,
 });
 
 addItem({
-    name: "Cafe La Región",
+    name: "Café La Región",
     img: "https://th.bing.com/th/id/OIP.Vfe5h9wLKaBvLFaMr-6ovAHaJ8?rs=1&pid=ImgDetMain",
     description: "Café chiapaneco con sabor suave, notas florales y toques de chocolate.",
     price:250,
 });
 
 addItem({
-    name: "Cafe Mujer Serrana",
+    name: "Café Mujer Serrana",
     img: "https://th.bing.com/th/id/OIP.a-1Dfm1iXzCmOGC3l1uMpwHaHW?rs=1&pid=ImgDetMain",
     description: "Cultivado por familias indígenas nahuas en Puebla. Procesado de manera artesanal.",
     price: 230,
 });
 
 addItem({
-    name: "Cafe Santa Elena",
+    name: "Café Santa Elena",
     img: "https://th.bing.com/th/id/OIP.DFP0PWyd02Tx7UMyM_Ay8gHaHa?rs=1&pid=ImgDetMain",
     description: "Café de Veracruz con sabor achocolatado, acidez sutil y notas a frutos rojos.",
     price:700,
 });
 
 addItem({
-    name: "Cafe Zapatista",
+    name: "Café Zapatista",
     img: "https://schoolsforchiapas.org/wp-content/uploads/2014/04/20230705_133747si-1024x1024.jpg",
     description: "Café solidario y de comercio justo de Chiapas. Cultivado con prácticas ecológicas.",
     price:313,
