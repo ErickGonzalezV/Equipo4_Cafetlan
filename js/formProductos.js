@@ -25,8 +25,8 @@ document.getElementById("upload_widget").addEventListener('click', function () {
     cloudinaryWidget.open();
 }, false);
 
-document.getElementById('form').addEventListener('submit', function(event) {
-    event.preventDefault();
+    document.getElementById('form').addEventListener('submit', function(event) {
+        event.preventDefault();
 
     const nombre = document.getElementById('nombre').value.trim();
     const descripcion = document.getElementById('descripcion-producto').value.trim();
