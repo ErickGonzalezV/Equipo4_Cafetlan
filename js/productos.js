@@ -23,7 +23,7 @@ function addItem(item) {
     itemsContainer.innerHTML += itemHTML;
 
     guardarProductoEnLocalStorage(item);
-} *///termina primera parte cometnada   
+} //termina primera parte cometnada   
 
  /* function addItem2(item) {
     // Crear el HTML para mostrar el producto en la interfaz
