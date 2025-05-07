@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro</title>
+    <link rel="stylesheet" href="./css/formRegistro.css">
+    <script src="https://kit.fontawesome.com/529df2aa81.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <!--iconsBootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -25,13 +27,8 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap" rel="stylesheet">
     <!-- crimson instalada -->
-
-    <!--botón flotante-->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -42,7 +39,41 @@
     </main>
     <!-- Fin barra nav -->
 
+    <div class="container">
+        <div class="form-content">
+            <h1 id="title">Regístrate</h1>
+            <div id="alertContainer"></div>
+            <form id="form">
+                <div class="input-group">
+                    <div class="input-field">
+                        <i class="fa-solid fa-user"style="color:#B4C292"></i>
+                        <input type="text" placeholder="Nombre Completo" id="nombre">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-phone" style="color:#B4C292" ></i>
+                        <input type="number" placeholder="Número de teléfono" id="telefono">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-envelope" style="color:#B4C292"></i>
+                        <input type="email" placeholder="Correo" id="email">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock" style="color:#B4C292" ></i>
+                        <input type="password" placeholder="Contraseña" id="password">
+                    </div>
+                    <div class="input-field">
+                        <i class="fa-solid fa-lock" style="color:#B4C292"></i>
+                        <input type="password" placeholder="Confirma la contraseña" id="confirmPassword">
+                    </div>
+                    <p style="color:#808080"><strong>Tu contraseña debe tener entre 8 y 20 caracteres, incluir letras y números, y no contener espacios ni caracteres especiales.</strong></p>
+                </div>
 
+                <div class="btn-field">
+                    <button id="btnRegistro" class="form" type="submit">Crear Cuenta</button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <!-- FOOTER  -->
     <div id="footer">
@@ -52,16 +83,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-
     <script src="./js/main.js"></script>
-
-    <!--botón flotante -->
-    <a href="formulario.html" class="btn btn-primary rounded-circle position-fixed shadow"
-   style="top: 50%; right: 20px; transform: translateY(-50%);
-          width: 60px; height: 60px;
-          display: flex; align-items: center; justify-content: center; font-size: 24px;">
-  <i class="bi-cart"></i>
-</a>
+    <script src="./js/formRegistro.js"></script>
 </body>
 
 </html>
