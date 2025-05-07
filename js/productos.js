@@ -8,7 +8,7 @@ function addItem(item) {
     const itemHTML = `
     <div class="col-md-4 mb-4">
         <div class="card h-100 bg-white shadow">
-            <img src="${item.img}" class="card-img-top" alt="image">
+            <img src="${item.img}" class="card-img-top" alt="image" id="imgProd">
             <div class="card-body">
                 <h5 class="card-title">${item.name}</h5>
                 <p class="card-text">${item.description}</p>
@@ -55,7 +55,7 @@ function addItemLocalStorage(objeto) {
     const itemHTML = `
     <div class="col-md-4 mb-4">
         <div class="card h-100 bg-white shadow">
-            <img src="${objeto.img}" class="card-img-top" alt="image">
+            <img src="${objeto.img}" class="card-img-top" alt="image" id="imgProd">
             <div class="card-body">
                 <h5 class="card-title">${objeto.nombre}</h5>
                 <p class="card-text">${objeto.descripcion}</p>
@@ -99,7 +99,7 @@ function mostrarProductosDeLocalStorage() {
         const itemHTML = `
         <div class="col-md-4 mb-4">
             <div class="card h-100 bg-white shadow">
-                <img src="${producto.imagen || ''}" class="card-img-top" alt="image">
+                <img src="${producto.imagen || ''}" class="card-img-top" alt="image id="imgProd"">
                 <div class="card-body">
                     <h5 class="card-title">${producto.nombre || 'Sin nombre'}</h5>
                     <p class="card-text">${producto.descripcion || 'Sin descripción'}</p>
