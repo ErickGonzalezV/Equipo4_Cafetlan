@@ -1,16 +1,16 @@
-html{
-   --bg-color:#736F4E;
-   --font-color:#3B3923;
-   --hg-color:#B4C292;
-   --coff-color:#D17A22;
-   --vino-color:#4C061D;
+html {
+  --bg-color: #736F4E;
+  --font-color: #3B3923;
+  --hg-color: #B4C292;
+  --coff-color: #D17A22;
+  --vino-color: #4C061D;
 }
 
-body{
-   background-color: var(--bg-color);
-   color: var(--hg-color);
-   width: 100%;
-   height: auto;
+body {
+  background-color: var(--bg-color);
+  color: var(--hg-color);
+  width: 100%;
+  height: auto;
 }
 
 .card {
@@ -25,54 +25,60 @@ body{
 .imagen-carrusel {
   width: 100%;
   max-width: 100%;
-  max-height: 300px; 
+  max-height: 300px;
   object-fit: contain;
   object-position: top;
   display: block;
 }
-    
+
 div.container {
   margin: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
- 
- .fluid-container{
-    background-color:var(--hg-color);
-    padding-bottom: 30px;
-    padding-top: 30px;
-  }
-  
-  nav.navbar.navbar-expand-lg {
-     background-color: var(--hg-color);
-     font-family: "Oxygen", sans-serif;
-     
-  }
-  .navbar-brand{
-    font-family:"Crimson Text", serif;
-    font-size: 30px;
-    margin-left: 30px;
-    color: #3B3923;
-  }
-  .color-login{
-    color:#3B3923;;
-  }
- h1{
-   font-family: "Oxygen", sans-serif;
- }
- p{
-   font-family: "Raleway", sans-serif;
- }
 
- .container#proyecto{
-   justify-content:flex-end;
-   margin-top: 20px;
-   font-family: "Raleway", sans-serif;;
-   padding: 40px;
- }
+.fluid-container {
+  background-color: var(--hg-color);
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
 
- #carouselCafetlan{
+nav.navbar.navbar-expand-lg {
+  background-color: var(--hg-color);
+  font-family: "Oxygen", sans-serif;
+
+}
+
+.navbar-brand {
+  font-family: "Crimson Text", serif;
+  font-size: 30px;
+  margin-left: 30px;
+  color: #3B3923;
+}
+
+.color-login {
+  color: #3B3923;
+  ;
+}
+
+h1 {
+  font-family: "Oxygen", sans-serif;
+}
+
+p {
+  font-family: "Raleway", sans-serif;
+}
+
+.container#proyecto {
+  justify-content: flex-end;
+  margin-top: 20px;
+  font-family: "Raleway", sans-serif;
+  ;
+  padding: 40px;
+}
+
+#carouselCafetlan {
   padding-top: 50px;
   padding-bottom: 50px;
   margin-top: 50px;
@@ -91,29 +97,31 @@ div.container {
 a.btn {
   z-index: 9999;
 }
-.btn-primary{
+
+.btn-primary {
   background-color: var(--vino-color);
   border-color: var(--vino-color);
 
 }
+
 .btn-primary:hover {
   background-color: var(--hg-color);
   border-color: var(--hg-color);
 
 }
 
-footer{
+footer {
   background-color: #3B3923;
   color: #B4C292;
-  
+
   padding: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  
+
 }
 
-#tituloFooter{
+#tituloFooter {
   font-family: "Crimson Text", serif;
   display: flex;
   align-items: center;
@@ -131,9 +139,9 @@ footer{
 
 #footerDos {
   display: flex;
-  justify-content: space-between; 
+  justify-content: space-between;
   padding: 10px;
-  gap: 60px; 
+  gap: 60px;
   font-family: 'Oxygen';
   font-style: normal;
   font-size: 20px;
@@ -146,25 +154,27 @@ footer h3 {
 
 footer h5 {
   font-size: 14px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   font-weight: normal;
   cursor: pointer;
 }
 
-#imgProd{width: 100%; 
-  height: 300px; 
+#imgProd {
+  width: 100%;
+  height: 300px;
 }
 
 /* Apartado de contacto */
 
-#contacto{
+#contacto {
   margin-top: 100px;
 }
 
-#labelContacto{
+#labelContacto {
   font-family: "Oxygen", sans-serif;
 }
-#email{
+
+#email {
   font-family: "Raleway", sans-serif;
 }
 
@@ -174,15 +184,18 @@ footer h5 {
   justify-content: center;
   color: var(--font-color);
 }
-#list-items.card-title{
+
+#list-items.card-title {
   font-family: "Oxygen", sans-serif;
 
 }
-.card-body{
+
+.card-body {
   padding-left: 100px;
   padding-top: 30px;
   padding-right: 60px;
 }
+
 @media (max-width: 768px) {
   .card-body {
     padding-left: 40px;
@@ -201,31 +214,40 @@ footer h5 {
     font-size: 0.8rem;
   }
 }
-.card-title{
+
+.card-title {
   font-family: "Oxygen", sans-serif;
   color: #131312;
   font-weight: bold;
 
 }
-.card-subtitle{
+
+.card-subtitle {
   font-family: "Oxygen", sans-serif;
-  font-weight:bold
+  font-weight: bold
 }
-.card-text{
+
+.card-text {
   font-family: "Raleway", sans-serif;
   color: #131312;
   font-size: 18px;
 }
-.btn-primary2{
+
+.btn-primary2 {
   background-color: var(--vino-color);
   border-color: var(--vino-color);
   color: beige;
 
-  
+
 }
+
 .btn-primary2:hover {
   background-color: var(--coff-color);
   border-color: var(--coff-color);
   color: beige;
 
+}
+
+#header {
+  background: url(https://img.freepik.com/foto-gratis/manos-granos-cafe_611759-1.jpg) center center / cover no-repeat;
 }
