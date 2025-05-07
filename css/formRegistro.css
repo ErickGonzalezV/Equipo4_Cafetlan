@@ -30,7 +30,7 @@
 .form-content h1 {
     font-size: 45px;
     margin-bottom: 50px;
-    color: #ffffff;
+    color: #B4C292;
     position: relative;
 }
 
@@ -71,7 +71,7 @@ form p {
 .btn-field {
     width: 100%;
     display: flex;
-    padding-top: 80px;
+    padding-top: 40px;
     justify-content: space-between;
 }
 
@@ -85,6 +85,7 @@ form p {
     border: 0;
     outline: 0;
     cursor: pointer;
+    
 }
 
 .input-group {
