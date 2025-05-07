@@ -90,7 +90,6 @@ div.container {
 
 a.btn {
   z-index: 9999;
-  position: relative;
 }
 .btn-primary{
   background-color: var(--vino-color);
@@ -152,7 +151,9 @@ footer h5 {
   cursor: pointer;
 }
 
-
+#imgProd{width: 100%; 
+  height: 300px; 
+}
 
 /* Apartado de contacto */
 

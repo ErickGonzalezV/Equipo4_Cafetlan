@@ -57,7 +57,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
       }
 
     //Password
-    const passwordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/;
+    const passwordRegex =  /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}$/;
     if (password === "") {
         showAlert('Por favor ingresa una contraseña');
         return;
@@ -73,7 +73,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
     btnRegistro.textContent = 'Registrando...';
     setTimeout(() => {
-        btnRegistro.textContent = 'Enviar';
+        btnRegistro.textContent = 'Registrar';
         alertContainer.innerHTML = `
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 Registro de usuario éxitoso.
