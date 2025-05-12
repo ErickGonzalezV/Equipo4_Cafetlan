@@ -184,7 +184,7 @@ addItem({
 
 addItem({
     name: "Café Zapatista",
-    img: "https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1747073062/SU1BR0VOXzEwX0VESVRBREEtUGhvdG9yb29tX2Q2b3ozbg==/drilldown",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747073062/IMAGEN_10_EDITADA-Photoroom_d6oz3n.jpg",
     description: "Café solidario y de comercio justo de Chiapas. Cultivado con prácticas ecológicas.",
     price: 313,
 });
