@@ -17,6 +17,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap"
       rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!--Quitar flechas en input precio-->
+<style>
+  /* Chrome, Safari, Edge, Opera */
+  input[type=number]::-webkit-outer-spin-button,
+  input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  /* Firefox */
+  input[type=number] {
+    appearance: textfield; 
+  }
+</style>
 </head>
 
 <body>
@@ -41,7 +55,7 @@
                 <label class="my-1 mr-2" for="categoria">Selecciona Categoría</label>
                 <select class="form-select" id="categoria" name="categoria" style="width: 650px;">
                     <option value="" selected>Selecciona...</option>
-                    <option value="Cafe">Cafe</option>
+                    <option value="Cafe">Café</option>
                     <option value="Cafeteras">Cafeteras</option>
                     <option value="Otro">Otro</option>
                 </select>
