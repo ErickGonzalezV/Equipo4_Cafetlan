@@ -56,7 +56,9 @@ nav.navbar.navbar-expand-lg {
   margin-left: 30px;
   color: #3B3923;
 }
-
+.nav-link{
+  font-family: "Oxygen", sans-serif;
+}
 .color-login {
   color: #3B3923;
   ;
