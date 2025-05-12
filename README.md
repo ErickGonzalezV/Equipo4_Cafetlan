@@ -32,19 +32,19 @@ Los integrantes de este equipo son:
 ![Index]()
 
 2. vista previa del Nosotros.html
-![Index]()
+![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/nosotroshtml.png)
 
 3. vista previa del Productos.html
-![Index]()
+![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/Productoshtml.png)
 
 4. vista previa del FormRegistrate.html
-![Index]()
+![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/formRegistrohtml.png)
 
 5. vista previa del Contactanos.html
-![Index]()
+![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/Contactanoshtml.png)
 
 6. vista previa del FormProductos.html
-![Index]()
+![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/formProductohtml.png)
 
 7. vista previa del Login.html
-![Index]()
+![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/loginhtml.png)
