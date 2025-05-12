@@ -11,7 +11,7 @@ const footer = document.getElementById("footer")
     <div class="collapse navbar-collapse" id="navbarNav">
 
       <div class="centro d-flex mx-auto">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav d-flex gap-5">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
           </li>
@@ -27,7 +27,7 @@ const footer = document.getElementById("footer")
         </ul>
       </div>
 <div class="icons d-flex ms-auto ">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav d-flex gap-5">
            <li class="nav-link" >
             <i class="bi bi-cart2"></i>
           </li>
