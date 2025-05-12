@@ -121,14 +121,14 @@ document.addEventListener('DOMContentLoaded', () => {
 // Lista de productos
 addItem({
     name: "Café Artesanal T-Zacualli",
-    img: "https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1747073062/SU1BR0VOXzFfRURJVEFEQS1QaG90b3Jvb21fYmNpajly/drilldown",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747073062/IMAGEN_1_EDITADA-Photoroom_bcij9r.jpg",
     description: "Venta de café artesanal tostado en comal de barro con leña, orgánico y de altura originario de Zacualpan de Amilpas Morelos. Combinación de Granos y grano caracolillo.",
     price: 200,
 });
 
 addItem({
     name: "Café Casa Mayor",
-    img: "https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1747073063/SU1BR0VOXzJfRURJVEFEQS1QaG90b3Jvb21feDE2Zm56/drilldown",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747073063/IMAGEN_2_EDITADA-Photoroom_x16fnz.jpg",
     description: "Café calidad Pluma, de variedad Thypica Arábica. Café Planchuela. Sabor suave y afrutado, con notas de nuez y chocolate.",
     price: 370,
 });
@@ -142,7 +142,7 @@ addItem({
 
 addItem({
     name: "Café Fusión Tres Regiones",
-    img: "https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1747073065/SU1BR0VOXzRfRURJVEFEQS1QaG90b3Jvb21fcG1oaTd2/template_primary/Y19jcm9wLHdfNDUwLGhfNzAw",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747073065/IMAGEN_4_EDITADA-Photoroom_pmhi7v.jpg",
     description: "Fusión de granos de Veracruz, Oaxaca y Chiapas. Tostado con más de 20 años de experiencia.",
     price: 400,
 });
@@ -156,21 +156,21 @@ addItem({
 
 addItem({
     name: "Café La Cueva",
-    img: "https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1747073066/SU1BR0VOXzZfRURJVEFEQS1QaG90b3Jvb21fendvcDM0/drilldown",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747073066/IMAGEN_6_EDITADA-Photoroom_zwop34.jpg",
     description: "Perfil delicado, matices dulces y frutales. Cultivado en climas de montaña de Chiapas.",
     price: 240,
 });
 
 addItem({
     name: "Café La Región",
-    img: "https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1747073066/SU1BR0VOXzdfRURJVEFEQS1QaG90b3Jvb21faG1uOWJp/drilldown",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747073066/IMAGEN_7_EDITADA-Photoroom_hmn9bi.jpg",
     description: "Café chiapaneco con sabor suave, notas florales y toques de chocolate.",
     price: 250,
 });
 
 addItem({
     name: "Café Mujer Serrana",
-    img: "https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1747073066/SU1BR0VOXzhfRURJVEFEQS1QaG90b3Jvb21fY3dmMWN5/drilldown",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747073066/IMAGEN_8_EDITADA-Photoroom_cwf1cy.jpg",
     description: "Cultivado por familias indígenas nahuas en Puebla. Procesado de manera artesanal.",
     price: 230,
 });
@@ -184,7 +184,7 @@ addItem({
 
 addItem({
     name: "Café Zapatista",
-    img: "https://res-console.cloudinary.com/dzlbldti5/thumbnails/v1/image/upload/v1747073062/SU1BR0VOXzEwX0VESVRBREEtUGhvdG9yb29tX2Q2b3ozbg==/drilldown",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747073062/IMAGEN_10_EDITADA-Photoroom_d6oz3n.jpg",
     description: "Café solidario y de comercio justo de Chiapas. Cultivado con prácticas ecológicas.",
     price: 313,
 });
