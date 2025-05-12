@@ -38,7 +38,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
     alertContainer.innerHTML = '';
 
     if (nombre === '' || descripcion === '' || categoria === '' || precio === '') {
-        showAlert('Por favor, completa todos los campos obligatorios.');
+        showAlert('Todos los campos son importantes. Por favor, completa los que están vacíos antes de continuar');
         return;
     }
 
@@ -68,10 +68,16 @@ document.getElementById('form').addEventListener('submit', function(event) {
         return;
     }
 
-    if (precio <= 0) {
-        showAlert('El precio debe ser mayor a 0.');
-        return;
-    }
+ if (isNaN(precio)) {
+    showAlert('El precio debe ser un número.');
+    return;
+} else if (precio <= 0) {
+    showAlert('El precio debe ser mayor a 0.');
+    return;
+} else if (precio > 50000) {
+    showAlert('El precio no debe exceder los $5000 MXN.');
+    return;
+}
 
     btnProductos.textContent = 'Enviando...';
     setTimeout(() => {
