@@ -113,12 +113,10 @@ a.btn {
 footer {
   background-color: #3B3923;
   color: #B4C292;
-
   padding: 40px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
 }
 
 #tituloFooter {
