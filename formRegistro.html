@@ -80,11 +80,28 @@
 
     </div>
 
+    <!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- Plugin jQuery disableAutoFill -->
+<script src="https://terrylinooo.github.io/jquery.disableAutoFill/dist/jquery.disableautofill.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
     <script src="./js/main.js"></script>
     <script src="./js/formRegistro.js"></script>
+
+    <!--Inicializar el pluggin -->
+    <script>
+    $(document).ready(function() {
+        $('#form').disableAutoFill({
+            randomizeInputName: true,  // Cambia los nombres de los campos para evitar autofill
+            callback: function() {
+                console.log("Autofill desactivado.");
+            }
+             });
+    });
+    </script>
 </body>
 
 </html>
