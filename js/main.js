@@ -1,7 +1,11 @@
 const navbar = document.getElementById("navbar")
 const footer = document.getElementById("footer")
 
-    navbar.insertAdjacentHTML("afterend",`<nav class="navbar navbar-expand-lg fixed-top">
+const inicioSesion = JSON.parse(sessionStorage.getItem("Usuario"));
+
+if (!inicioSesion) {
+  // Si no hay usuario logueado, redirigir al login
+  navbar.insertAdjacentHTML("afterend",`<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">Cafetlán</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -42,6 +46,46 @@ const footer = document.getElementById("footer")
     </div>
   </div>
 </nav>`);
+} else {
+  // Mostrar el nombre del usuario
+   navbar.insertAdjacentHTML("afterend",`<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="./index.html">Cafetlán</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+
+      <div class="centro d-flex mx-auto">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./productos.html">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./formRegistro.html">Regístrate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="./contacto.html">Contáctanos</a>
+          </li>
+        </ul>
+      </div>
+<div class="icons d-flex ms-auto ">
+        <ul class="navbar-nav">
+           <li class="nav-link" >
+            <i class="bi bi-cart2"></i>
+          </li>
+          <h5>hola usuario</h5>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>`);
+}
 
     footer.insertAdjacentHTML("beforeend", `
         <footer>
