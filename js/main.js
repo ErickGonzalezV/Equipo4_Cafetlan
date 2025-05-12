@@ -75,11 +75,12 @@ if (!inicioSesion) {
       </div>
 <div class="icons d-flex ms-auto ">
         <ul class="navbar-nav">
-           <li class="nav-link" >
+           <li class="nav-link  d-flex align-items-center" >
             <i class="bi bi-cart2"></i>
-          </li>
-          <h5>hola usuario</h5>
-          </li>
+   <li class="nav-link d-flex align-items-center">
+  <span class="fw-bold me-3" style="color: #3B3923;">Hola, ${inicioSesion.nombre}</span>
+  <button class="btn btn-sm" style="background-color:#736F4E; color:#B4C292; border: none; border-radius: 4px" onclick="cerrarSesion()">Cerrar sesión</button>
+</li>
         </ul>
       </div>
     </div>
@@ -115,6 +116,11 @@ if (!inicioSesion) {
       </div>
     </footer>  `)
 
+    //cerrar sesión
+    function cerrarSesion() {
+  sessionStorage.removeItem("Usuario");
+  window.location.href = "login.html";
+}
     //botón de disclaimer popover 
     document.addEventListener('DOMContentLoaded', function () {
       var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
