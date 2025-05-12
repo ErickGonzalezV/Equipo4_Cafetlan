@@ -37,7 +37,7 @@ Los integrantes de este equipo son:
 3. vista previa del Productos.html
 ![Index]()
 
-4. vista previa del Registrate.html
+4. vista previa del FormRegistrate.html
 ![Index]()
 
 5. vista previa del Contactanos.html
@@ -46,8 +46,5 @@ Los integrantes de este equipo son:
 6. vista previa del FormProductos.html
 ![Index]()
 
-7. vista previa del FormRegistro.html
-![Index]()
-
-8. vista previa del Login.html
+7. vista previa del Login.html
 ![Index]()
