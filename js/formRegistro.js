@@ -28,7 +28,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
     }
 
     //Telefono
-    const regexNumber = /^(?=.*[1-9])[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/;
+    const regexNumber = /^[\+]?[(]?([1-9]{1}[0-9]{2})[)]?[-\s\.]?([0-9]{3})[-\s\.]?([0-9]{4,6})$/;
     if (telefono === "" || !regexNumber.test(telefono)) {
         showAlert('El número proporcionado no es válido.');
         return;

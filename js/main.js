@@ -4,7 +4,6 @@ const footer = document.getElementById("footer")
 const inicioSesion = JSON.parse(sessionStorage.getItem("Usuario"));
 
 if (!inicioSesion) {
-  // Si no hay usuario logueado, redirigir al login
   navbar.insertAdjacentHTML("afterend",`<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">Cafetlán</a>
@@ -47,7 +46,6 @@ if (!inicioSesion) {
   </div>
 </nav>`);
 } else {
-  // Mostrar el nombre del usuario
    navbar.insertAdjacentHTML("afterend",`<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">Cafetlán</a>
@@ -58,7 +56,7 @@ if (!inicioSesion) {
     <div class="collapse navbar-collapse" id="navbarNav">
 
       <div class="centro d-flex mx-auto">
-        <ul class="navbar-nav">
+        <ul class="navbar-nav d-flex gap-5">
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
           </li>
@@ -66,17 +64,15 @@ if (!inicioSesion) {
             <a class="nav-link" href="./productos.html">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./formRegistro.html">Regístrate</a>
-          </li>
-          <li class="nav-item">
             <a class="nav-link" href="./contacto.html">Contáctanos</a>
           </li>
         </ul>
       </div>
 <div class="icons d-flex ms-auto ">
-        <ul class="navbar-nav">
-           <li class="nav-link  d-flex align-items-center" >
+        <ul class="navbar-nav d-flex gap-5">
+           <li class="nav-link" >
             <i class="bi bi-cart2"></i>
+          </li>
    <li class="nav-link d-flex align-items-center">
   <span class="fw-bold me-3" style="color: #3B3923;">Hola, ${inicioSesion.nombre}</span>
   <button class="btn btn-sm" style="background-color:#736F4E; color:#B4C292; border: none; border-radius: 4px" onclick="cerrarSesion()">Cerrar sesión</button>
