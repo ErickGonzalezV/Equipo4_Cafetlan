@@ -13,7 +13,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
     alertContainer.innerHTML = '';
 
     if (nombre === '' || email === '' || telefono === '' || password === '' || confirmPassword === '') {
-        showAlert('Por favor, completa todos los campos obligatorios.');
+        showAlert('Por favor, completa los campos vacíos que faltan.');
         return;
     }
 
