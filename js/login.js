@@ -21,7 +21,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
                 Inicio de usario éxitoso.
             </div>
         `;
-    window.location.href = "productos.html";
+    window.location.href = "index.html";
         return;
   } else {
     showAlert('Su correo y/o contraseña es erronea');

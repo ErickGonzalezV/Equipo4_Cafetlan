@@ -4,7 +4,8 @@ const footer = document.getElementById("footer")
 const inicioSesion = JSON.parse(sessionStorage.getItem("Usuario"));
 
 if (!inicioSesion) {
-  navbar.insertAdjacentHTML("afterend",`<nav class="navbar navbar-expand-lg fixed-top">
+  navbar.insertAdjacentHTML("afterend",`
+    <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">Cafetlán</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -46,7 +47,7 @@ if (!inicioSesion) {
   </div>
 </nav>`);
 } else {
-   navbar.insertAdjacentHTML("afterend",`<nav class="navbar navbar-expand-lg fixed-top">
+   navbar.insertAdjacentHTML("afterend",`<nav class="navbar navbar-expand-lg sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">Cafetlán</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -90,25 +91,17 @@ if (!inicioSesion) {
         <h2>Cafetlán</h2>
       </div>
       <div id="footerDos">
+      <div id="contactoFooter">
+      <h3>Aviso legal</h3>
+           <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="IMPORTANTE: Ésta página solo es un proyecto estudiantil. No se comercia con ningún contenido mostrado aquí.">
+         Aviso
+          </button>
+          </div>
           <div class="proyectoFooter">
             <h3>Proyecto</h3>
             <a href="./nosotros.html" style="text-decoration: none; color: inherit;"><h5>Sobre Nosotros</h5></a>
-            <a href="./productos.html" style="text-decoration: none; color: inherit;"><h5>Tienda</h5></a>
             <a href="./formRegistro.html" style="text-decoration: none; color: inherit;"> <h5>Únete</h5></a>
         </div>
-        <div id="contactoFooter">
-           <a href="./contacto.html" style="text-decoration: none; color: inherit;">  <h3>Contacto</h3></a>
-            <h5>Ayuda</h5>
-            <h5>Regístrate</h5>
-            <h5>Marcas</h5>
-          </div>
-          <div id = "disclaimer"> 
-          <p>
-    <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="IMPORTANTE: Ésta página solo es un proyecto estudiantil. No se comercia con ningún contenido mostrado aquí.">
-  Aviso
-</button>
-
-          </div>
       </div>
     </footer>  `)
 
