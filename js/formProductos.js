@@ -2,6 +2,10 @@ const btnProductos = document.getElementById('btnProductos');
 const imagenInput = document.getElementById('imagen-url');
 const previewContainer = document.getElementById('preview-container');
 
+
+
+
+
 const cloudinaryWidget = cloudinary.createUploadWidget({
     cloudName: 'dnmraub5x',
     uploadPreset: 'Cafetlán',
@@ -20,6 +24,14 @@ const cloudinaryWidget = cloudinary.createUploadWidget({
         });
     }
 });
+   document.getElementById("categoria").addEventListener("change", function () {
+        const errorDiv = document.getElementById("categoria-error");
+        if (this.value === "") {
+            errorDiv.style.display = "block";
+        } else {
+            errorDiv.style.display = "none";
+        }
+    });
 
 document.getElementById("upload_widget").addEventListener('click', function () {
     cloudinaryWidget.open();
@@ -134,6 +146,7 @@ document.getElementById("upload_widget").addEventListener('click', function () {
         // window.location.href = '/productos.html';
     }, 1000);
 
+    
     function showAlert(message) {
         const alertDiv = document.createElement('div');
         alertDiv.className = 'alert alert-danger alert-dismissible fade show';
