@@ -57,7 +57,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
       }
 
     //Password
-    const passwordRegex =  /^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,20}$/;
+    const passwordRegex =  /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ %^&*-]).{8,}$/;
     if (password === "") {
         showAlert('Por favor ingresa una contraseña');
         return;
