@@ -17,7 +17,7 @@ if (!inicioSesion) {
       <div class="centro d-flex mx-auto">
         <ul class="navbar-nav d-flex gap-5">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./nosotros.html">Nosotros</a>
+            <a class="nav-link" aria-current="page" href="./nosotros.html">Nosotros</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./productos.html">Productos</a>
@@ -45,6 +45,58 @@ if (!inicioSesion) {
       </div>
     </div>
   </div>
+
+    <style>
+        .nav-link {
+            font-size: 1.5rem; 
+            padding: 10px 20px; 
+            color: #333; 
+            transition: color 0.3s ease, background-color 0.3s ease; 
+            border-radius: 5px; 
+        }
+        .nav-link:hover {
+            color: #fff; 
+            background-color: #6b705c; 
+        }
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .nav-link {
+                font-size: 1.2rem; 
+                padding: 8px 15px;
+            }
+        }
+        @media (max-width: 576px) {
+            .nav-link {
+                font-size: 1rem; 
+                padding: 6px 12px;
+            }
+
+
+        .icons ul {
+            list-style: none; 
+            padding: 0; 
+        }
+        .icons .nav-link i {
+            font-size: 2rem; 
+            color: #333; 
+            transition: color 0.3s ease; 
+        }
+        .icons .nav-link i:hover {
+            color: #6b705c; 
+        }
+        /* Responsividad */
+        @media (max-width: 768px) {
+            .icons .nav-link i {
+                font-size: 1.5rem; 
+            }
+        }
+        @media (max-width: 576px) {
+            .icons .nav-link i {
+                font-size: 1.2rem; 
+            }
+        }
+    </style>
+
 </nav>`);
 } else {
    navbar.insertAdjacentHTML("afterend",`<nav class="navbar navbar-expand-lg sticky-top">
