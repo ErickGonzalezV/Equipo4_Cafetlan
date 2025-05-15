@@ -11,13 +11,20 @@ document.getElementById('form')
     let telefono = document.getElementById('telefono').value.trim();
 
     /*Aquí se tienen que insertar las validaciones*/
-    if (nombre === '' || email === '' || mensaje === '' || telefono === "") {
+   const camposVacios = [];
+
+    if (nombre === "") camposVacios.push("nombre");
+    if (email === "") camposVacios.push("correo");
+    if (mensaje === "") camposVacios.push("mensaje");
+    if (telefono === "") camposVacios.push("teléfono");
+
+    if (camposVacios.length > 0) {
       Swal.fire({
         icon: "warning",
         title: "Campos incompletos",
-        text: "Por favor, completa todos los campos antes de enviar."
+        html: `Por favor, complete los siguientes campos:<br><ul>${camposVacios.map(c => `<li>${c}</li>`).join("")}</ul>`
       });
-      return;
+    return;
     }
 
     // Validación nombre
