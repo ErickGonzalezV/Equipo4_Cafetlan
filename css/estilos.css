@@ -251,3 +251,43 @@ footer h5 {
 #header {
   background: url(https://img.freepik.com/foto-gratis/manos-granos-cafe_611759-1.jpg) center center / cover no-repeat;
 }
+
+.card-img-top{
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 40px;
+}
+
+
+
+        .card-mvv{
+            background: linear-gradient(135deg, rgba(59, 57, 35, 0.7), rgba(245, 245, 220, 0.7));
+            border-radius: 40px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-left: 10px;
+            padding: 4%;
+            width: 390px;
+            min-height: 700px;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        .card-mvv-img-top {
+            min-height: 400px;
+            min-width: 900px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .card-mvv-body {
+            flex-grow: 1;
+            text-align: justify;
+            padding: 10px;
+        }
+        .card-title, .card-text{
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+        .card-title{
+          margin-top: 25px;
+        }

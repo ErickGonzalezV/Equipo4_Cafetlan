@@ -182,53 +182,40 @@
     <h1 class="display-3">cafetlán</h1>
     <p class="lead">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
   </section> -->
-  <div style="bottom: 10%;" class="container" id="cafinfo">
+  <div style="bottom: 10%;" class="container-fluid" id="cafinfo">
     <section id="gallery">
-      <div class="container">
+      <div class="container-mvv">
         <div class="row">
           <div class="col-lg-4 mb-4">
-            <div class="card">
-              <img src="https://elorbe.com/archivos_data/2017/08/CAFE-2.jpg" alt="" class="card-img-top">
-              <div class="card-body">
+            <div class="card-mvv">
+              <img src="https://elorbe.com/archivos_data/2017/08/CAFE-2.jpg" alt="" class="card-img-top" height="300">
+              <div class="card-body-mvv">
                 <h5 class="card-title">Misión</h5>
-                <p class="card-text">Acortar las distancias a través de la tecnología a pequeños y
-                  medianos productores asi como cooperativas de café que
-                  sean 100% mexicanas, con el fin de que tener mayor visibilidad y consumo en
-                  el país, logrando una conexión entre el consumidor y
-                  los productores cafetaleros, creando la experiencia del consumo de café producido de
-                  manera orgánica, sustentable y ecológica.</p>
+                <br><p class="card-text">Conectar a pequeños y medianos productores de café mexicano con consumidores, 
+                  promoviendo su visibilidad, consumo y una producción orgánica, sostenible y ecológica.</p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card">
+            <div class="card-mvv">
               <img src="https://quecafe.info/wp-content/uploads/2019/03/Tostar-en-comal-1024x512.png" alt=""
-                class="card-img-top" width="457" height="230">
-              <div class="card-body">
+                class="card-img-top" width="457" height="300">
+              <div class="card-body-mvv">
                 <h5 class="card-title">Visión</h5>
-                <p class="card-text">Nuestra visión está dirigida a la visualización y reconocimiento de los cafetaleros
-                  locales y
-                  nacionales, al crecimiento del café hecho en México,
-                  destacando sus prácticas eco-sustentables, asi como su calidad en cuanto a: sabor, aroma y cuerpo
-                  que solo los granos mas selectos pueden ofrecer, demostrando asi la gran diversidad y calidad de los
-                  cafetales mexicanos. </p>
+                <br><p class="card-text">Ser reconocidos por visibilizar y destacar la calidad, sabor y diversidad del café mexicano,
+                   promoviendo prácticas sostenibles y su valor en el mercado. </p>
               </div>
             </div>
           </div>
           <div class="col-lg-4 mb-4">
-            <div class="card">
+            <div class="card-mvv">
               <img src="https://mbmarcobeteta.com/wp-content/uploads/2021/10/cafe-de-olla.jpg" alt=""
-                class="card-img-top" width="457" height="230">
-              <div class="card-body">
+                class="card-img-top" width="457" height="300">
+              <div class="card-body-mvv">
                 <h5 class="card-title">Valores</h5>
-                <p class="card-text">
-                <h6>Visibilidad</h6> Brindar visibilidad a pequeños y medianos productores de café. <br>
-                <h6>Variedad</h6> Proporcionar acceso a cafés únicos llenos de matices en sabor y aroma y que no se
-                obtienen en tiendas
-                convencionales. <br>
-                <h6>Inovación</h6> Aprovechar la tecnología para facilitar la visualización y venta del café. <br>
-                <h6>Comercio Justo</h6> Garantizar que los productores reciban un pago justo por su
-                trabajo. </p>
+                <p class="card-text"><strong><br>Visibilidad:</strong><br> Promover la presencia de pequeños y medianos productores de café mexicano en el mercado global.<br>
+                                <br><strong>Innovación:</strong>
+                                  Utilizar tecnología para conectar productores con consumidores.<br>
               </div>
             </div>
           </div>
@@ -272,6 +259,28 @@
     <i class="bi-cart"></i>
   </a>
 
+
+    <script>
+        // Seleccionar todas las cards
+        const cards = document.querySelectorAll('.card-mvv');
+
+        // Configurar Intersection Observer
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show'); // Agregar clase 'show' cuando esté en vista
+                    observer.unobserve(entry.target); // Dejar de observar después de la animación
+                }
+            });
+        }, {
+            threshold: 0.1 // Activa cuando el 10% de la card esté visible
+        });
+
+        // Observar cada card
+        cards.forEach(card => {
+            observer.observe(card);
+        });
+    </script>
 
 </body>
 
