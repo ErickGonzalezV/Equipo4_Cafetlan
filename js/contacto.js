@@ -76,7 +76,7 @@ document.getElementById('form')
 
   if (telefono === "" || !regexNumber.test(telefono)) {
       Swal.fire({
-          title: "Algo sucedió!",
+          title: "¡Algo sucedió!",
           text: "El número proporcionado no es válido.",
           icon: "error"
       });//Primera validacion de telefono
@@ -100,7 +100,7 @@ document.getElementById('form')
       Swal.fire({
         icon: "error",
         title: "Mensaje inválido",
-        text: "El mensaje debe contener mínimo 10 caracteres y máximo 500 e iniciar con una letra."
+        text: "El mensaje debe contener mínimo 10 caracteres, máximo 500 e iniciar con una letra."
       });
       return;
   }//fin validación mensaje

@@ -18,13 +18,13 @@ document.getElementById('form').addEventListener('submit', function(event) {
      sessionStorage.setItem("Usuario", JSON.stringify(user));
      alertContainer.innerHTML = `
             <div class="alert alert-success alert-dismissible fade show" role="alert">
-                Inicio de usario éxitoso.
+                Inicio de usuario exitoso.
             </div>
         `;
     window.location.href = "index.html";
         return;
   } else {
-    showAlert('Su correo y/o contraseña es erronea');
+    showAlert('Su correo y/o contraseña es errónea');
         return;
   }
 
