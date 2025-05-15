@@ -56,7 +56,7 @@ function addItemLocalStorage(objeto) {
     <div class="col-md-4 mb-4">
         <div class="card h-100 shadow">
             <img src="${objeto.img}" class="card-img-top" alt="image" id="imgProd">
-            <div class="card-body">
+            <div class="card-body-producto">
                 <h5 class="card-title">${objeto.nombre}</h5>
                 <p class="card-text">${objeto.descripcion}</p>
                 <p class="card-text">Precio: $${objeto.precio}</p>
