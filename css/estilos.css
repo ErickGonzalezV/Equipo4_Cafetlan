@@ -191,9 +191,14 @@ footer h5 {
 }
 
 .card-body {
+  background: linear-gradient(135deg, #FFF5E1 0%, #F5E9D2 100%);
   padding-left: 100px;
   padding-top: 30px;
   padding-right: 60px;
+}
+
+.card-producto{
+  background: linear-gradient(135deg, #FFF5E1 0%, #F5E9D2 100%);
 }
 
 @media (max-width: 768px) {
@@ -291,3 +296,16 @@ footer h5 {
         .card-title{
           margin-top: 25px;
         }
+#product-container .card,
+#product-container-local .card {
+    background: linear-gradient(135deg,rgba(59, 57, 35, 0.7), rgba(245, 245, 220, 0.7));
+    border: none; /* Elimina el borde blanco por defecto de Bootstrap */
+    border-radius: 8px; /* Bordes redondeados para la card */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Mantiene la sombra */
+}
+
+#product-container .card-body,
+#product-container-local .card-body {
+    background: transparent; /* Asegura que el card-body no tenga fondo blanco */
+    padding: 15px; /* Ajusta el padding si es necesario */
+}
