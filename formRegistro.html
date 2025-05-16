@@ -62,13 +62,13 @@
     <!-- Correo -->
     <div class="mb-3">
       <label for="email" class="form-label">Correo electrónico</label>
-      <input type="email" class="form-control" id="email" name="user_mail" placeholder="Ej. ejemplo@correo.com" style="width: 650px;">
+      <input type="email" class="form-control" id="email"  placeholder="Ej. ejemplo@correo.com" style="width: 650px;">
     </div>
 
     <!-- Contraseña -->
     <div class="mb-3">
       <label for="password" class="form-label">Contraseña</label>
-      <input type="password" class="form-control" id="password" name="password" placeholder="Ingresa una contraseña segura" style="width: 650px;">
+      <input type="password" class="form-control" id="password"  placeholder="Ingresa una contraseña segura" style="width: 650px;">
     </div>
 
     <!-- Confirmar contraseña -->
@@ -101,10 +101,7 @@
 
     </div>
 
-    <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Plugin jQuery disableAutoFill -->
-<script src="https://terrylinooo.github.io/jquery.disableAutoFill/dist/jquery.disableautofill.min.js"></script>
+   
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
@@ -113,13 +110,7 @@
     <script src="./js/main.js"></script>
     <script src="./js/formRegistro.js"></script>
 
-    <!--inicializa pluggin -->
-    <script>
-    $(document).ready(function() {
-        $('#form').disableAutoFill({
-            randomizeInputName: true,  // Cambia los nombres de los campos para evitar autofill
-            callback: function() {
-                console.log("Autofill desactivado.");}
+    
             
              });
     });

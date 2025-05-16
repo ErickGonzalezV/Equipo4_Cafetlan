@@ -51,7 +51,7 @@
     <!-- Correo -->
     <div class="mb-3">
       <label for="email" class="form-label">Correo electrónico</label>
-      <input type="email" class="form-control" id="email" name="user_mail" placeholder="Ej. ejemplo@correo.com" autocomplete="off">
+      <input type="email" class="form-control" id="email"  placeholder="Ej. ejemplo@correo.com" >
     </div>
 
     <!-- Contraseña -->
@@ -84,10 +84,7 @@
     <!--Fin del Footer-->
 
 
-<!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-<!-- Plugin jQuery disableAutoFill -->
-<script src="https://terrylinooo.github.io/jquery.disableAutoFill/dist/jquery.disableautofill.min.js"></script>
+
    
     
 
@@ -101,13 +98,7 @@
     <script src="./js/main.js"></script>
     <script src="./js/login.js"></script>
 
-    <!--inicializa pluggin -->
-    <script>
-    $(document).ready(function() {
-        $('#form').disableAutoFill({
-            randomizeInputName: true,  // Cambia los nombres de los campos para evitar autofill
-            callback: function() {
-                console.log("Autofill desactivado.");}
+    
             
              });
     });
