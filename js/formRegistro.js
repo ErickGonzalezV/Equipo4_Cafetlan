@@ -12,9 +12,17 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
     alertContainer.innerHTML = '';
 
-    if (nombre === '' || email === '' || telefono === '' || password === '' || confirmPassword === '') {
-        showAlert('Por favor, completa los campos vacíos que faltan.');
-        return;
+     const camposVacios = [];
+
+    if (nombre === "") camposVacios.push("Nombre Completo");
+    if (telefono === "") camposVacios.push("Número de teléfono");
+    if (email === "") camposVacios.push("Correo");
+    if (password === "") camposVacios.push("Contraseña");
+    if (confirmPassword === "") camposVacios.push("Confirmación de la contraseña");
+
+    if (camposVacios.length > 0) {
+      showAlert(`Por favor, complete los siguientes campos:<br><ul>${camposVacios.map(c => `<li>${c}</li>`).join("")}</ul>`)
+      return;
     }
 
     //Nombre

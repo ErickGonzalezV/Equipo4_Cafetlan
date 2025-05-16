@@ -2,10 +2,6 @@ const btnProductos = document.getElementById('btnProductos');
 const imagenInput = document.getElementById('imagen-url');
 const previewContainer = document.getElementById('preview-container');
 
-
-
-
-
 const cloudinaryWidget = cloudinary.createUploadWidget({
     cloudName: 'dnmraub5x',
     uploadPreset: 'Cafetlán',
@@ -49,9 +45,17 @@ document.getElementById("upload_widget").addEventListener('click', function () {
 
     alertContainer.innerHTML = '';
 
-    if (nombre === '' || descripcion === '' || categoria === '' || precio === '') {
-        showAlert('Todos los campos son importantes. Por favor, completa los que están vacíos antes de continuar');
-        return;
+    const camposVacios = [];
+
+    if (nombre === "") camposVacios.push("Nombre del producto");
+    if (descripcion === "") camposVacios.push("Descripción del producto");
+    if (categoria === "") camposVacios.push("Categoría");
+    if (precio === "") camposVacios.push("Precio del producto");
+    if (imagenUrl === "") camposVacios.push("Imagen del producto");
+
+    if (camposVacios.length > 0) {
+      showAlert(`Por favor, complete los siguientes campos:<br><ul>${camposVacios.map(c => `<li>${c}</li>`).join("")}</ul>`)
+      return;
     }
 
     const regexNombre = /^[A-Za-zÁÉÍÓÚáéíóúÑñ\s'-]+$/;
@@ -80,16 +84,20 @@ document.getElementById("upload_widget").addEventListener('click', function () {
         return;
     }
 
- if (isNaN(precio)) {
-    showAlert('El precio debe ser un número.');
-    return;
-} else if (precio <= 0) {
-    showAlert('El precio debe ser mayor a 0.');
-    return;
-} else if (precio > 50000) {
-    showAlert('El precio no debe exceder los $5000 MXN.');
-    return;
-}
+ const precioRegex = /^\d+(\.\d{1,2})?$/;
+    if (isNaN(precio)) {
+        showAlert('El precio debe ser un número.');
+        return;
+    } else if (!precioRegex.test(precio)) {
+        showAlert('El precio solo puede tener 2 decimales');
+        return;
+    } else if (precio <= 0) {
+        showAlert('El precio debe ser mayor a 0.');
+        return;
+    } else if (precio > 50000) {
+        showAlert('El precio no debe exceder los $5000 MXN.');
+        return;
+    }
 
     btnProductos.textContent = 'Enviando...';
     setTimeout(() => {
