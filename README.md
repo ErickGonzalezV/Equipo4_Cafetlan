@@ -1,9 +1,9 @@
-# Cafetlan
+# Cafetlán
 
-## Repositorio del equipo 4 para el proyecto final de Generation Mexico. 
+## Repositorio del equipo 4 para el proyecto final de Generation México. 
 
 ---
-En este proyecto se desarrolla una E-comerce llamada Cafetlán la cual el proposito es vender cafe nacional producido por cafetaleros locales y nacionales  de manera artesanal promocionando el cafe Méxicano a nuestros compradores.
+En este proyecto creamos Cafetlán, una tienda en línea pensada para visibilizar el trabajo de cafetaleros locales y nacionales que producen café artesanal. La idea es conectar con más personas y generar conciencia sobre el valor del café mexicano y de quienes lo hacen posible, dándoles un espacio y ayudando a que su trabajo llegue más lejos.
 
 **Se utiliza el material recabado para el e-commerce unicamente con fines educativos, en ningún momento se planea hacer uso de este material obtenido con el fin lucrativo de ningún tipo**
 
@@ -28,23 +28,22 @@ Los integrantes de este equipo son:
 7. Harold Iván Gutiérrez Romero
 ```
 
-1. vista previa del index.html
-![Index]()
 
-2. vista previa del Nosotros.html
+
+1. vista previa del Nosotros.html
 ![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/nosotroshtml.png)
 
-3. vista previa del Productos.html
+2. vista previa del Productos.html
 ![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/Productoshtml.png)
 
-4. vista previa del FormRegistrate.html
+3. vista previa del FormRegistrate.html
 ![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/formRegistrohtml.png)
 
-5. vista previa del Contactanos.html
+4. vista previa del Contactanos.html
 ![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/Contactanoshtml.png)
 
-6. vista previa del FormProductos.html
+5. vista previa del FormProductos.html
 ![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/formProductohtml.png)
 
-7. vista previa del Login.html
+6. vista previa del Login.html
 ![Index](https://raw.githubusercontent.com/ErickGonzalezV/Equipo4_Cafetlan/refs/heads/isaacDevelop/imgProyecto/loginhtml.png)
