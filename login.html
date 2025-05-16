@@ -43,35 +43,37 @@
      </div>
     <!-- Fin barra nav -->
 
-    <main class="container">
-        <div class="form-content">
-            <h1 id="title">Inicio de sesión</h1>
-            <div id="alertContainer"></div>
-            <form id="form">
-                <div class="input-group">
-                    <div class="input-field">
-                        <i class="fa-solid fa-envelope" style="color:#B4C292"></i>
-                        <input type="email" id="email" placeholder="Correo" autocomplete="off" name="user_mail">
-                    </div>
-                    <div class="input-field">
-                        <i class="fa-solid fa-lock" style="color:#B4C292"></i>
-                        <input type="password" id="password" placeholder="Contraseña">
-                    </div>
-                    <div class="btn-field">
-                        <button id="signIn" type="submit">Iniciar Sesión</button>
+    <main class="login-container">
+  <h1 class="text-center mb-4">Inicio de sesión</h1>
+  <div id="alertContainer"></div>
 
-                    </div>
+  <form id="form" class="mx-auto" style="max-width: 650px;">
+    <!-- Correo -->
+    <div class="mb-3">
+      <label for="email" class="form-label">Correo electrónico</label>
+      <input type="email" class="form-control" id="email" name="user_mail" placeholder="Ej. ejemplo@correo.com" autocomplete="off">
+    </div>
 
-                    <!--botón flotante -->
-    <a href="formulario.html" class="btn btn-primary rounded-circle position-fixed shadow" style="top: 50%; right: 20px; transform: translateY(-50%);
-        width: 60px; height: 60px;
-        display: flex; align-items: center; justify-content: center; font-size: 24px;">
-        <i class="bi-cart"></i>
+    <!-- Contraseña -->
+    <div class="mb-3">
+      <label for="password" class="form-label">Contraseña</label>
+      <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+    </div>
 
-    </a>
-            </form>
-        </div>
-    </main>
+    <!-- Botón enviar -->
+    <div class="text-center">
+      <button id="signIn" type="submit" class="btn btn-primary">Iniciar Sesión</button>
+    </div>
+  </form>
+
+  <!-- Botón flotante -->
+  <a href="formulario.html" class="btn btn-primary rounded-circle position-fixed shadow" style="top: 50%; right: 20px; transform: translateY(-50%);
+      width: 60px; height: 60px;
+      display: flex; align-items: center; justify-content: center; font-size: 24px;">
+      <i class="bi-cart"></i>
+  </a>
+</main>
+
 
 
 
