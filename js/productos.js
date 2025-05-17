@@ -7,13 +7,13 @@ const prodAgregado = jsonProdAgregado ? JSON.parse(jsonProdAgregado) : [];
 function addItem(item) {
     const itemHTML = `
     <div class="col-md-4 mb-4">
-        <div class="card h-100 shadow">
-            <img src="${item.img}" class="card-img-top" alt="image" id="imgProd">
-            <div class="card-body">
-                <h5 class="card-title">${item.name}</h5>
-                <p class="card-text">${item.description}</p>
-                <p class="card-text">Precio: $${item.price}</p>
-                <a href="#" class="btn btn-primary mt-auto" onclick="agregarAlCarrito(${JSON.stringify(item)})">Agregar al carrito</a>
+        <div class="card h-100 shadow" style="border-radius: 40px">
+            <img src="${item.img}" class="card-img-top" alt="image" id="imgProd" style="height: auto, max-width: max-content">
+            <div class="card-body" style="display: container; margin: 10px">
+                <h5 class="card-title" style="margin-top: 0px";>${item.name}</h5>
+                <p class="card-text" style="display: block; margin-top: 30px; height: 150px">${item.description}</p>
+                <p class="card-text"><strong>Precio: $${item.price} MXN</strong></p>
+                <a href="#" class="btn btn-primary mt-auto" onclick="agregarAlCarrito(${JSON.stringify(item)})" style="display: inline-block; margin: 0 10px">Agregar al carrito</a>
             </div>
         </div>
         <br/>

@@ -43,13 +43,13 @@
      </div>
     <!-- Fin barra nav -->
 
-    <main class="login-container">
+  <main class="login-container" style="padding: 10%; display: block; height: max-content; padding-top: 5%;">
   <h1 class="text-center mb-4">Inicio de sesión</h1>
   <div id="alertContainer"></div>
 
-  <form id="form" class="mx-auto" style="max-width: 650px;">
+  <form id="form" class="mx-auto">
     <!-- Correo -->
-    <div class="mb-3">
+    <div class="mb-3" style="object-fit: contain; height: max-content; padding-top: 20px;">
       <label for="email" class="form-label">Correo electrónico</label>
       <input type="email" class="form-control" id="email"  placeholder="Ej. ejemplo@correo.com" >
     </div>
@@ -62,7 +62,7 @@
 
     <!-- Botón enviar -->
     <div class="text-center">
-      <button id="signIn" type="submit" class="btn btn-primary">Iniciar Sesión</button>
+      <button id="signIn" type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Iniciar Sesión</button>
     </div>
   </form>
 
@@ -83,28 +83,11 @@
     </div>
     <!--Fin del Footer-->
 
-
-
-   
-    
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
         crossorigin="anonymous"></script>
-
-        
-
-
     <script src="./js/main.js"></script>
     <script src="./js/login.js"></script>
-
-    
-            
-             });
-    });
-    </script>
-
-    
 </body>
 
 </html>
