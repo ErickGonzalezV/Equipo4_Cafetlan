@@ -18,7 +18,7 @@ body {
   border: 20px;
   padding: 20px;
   padding-top: 0px;
-  margin-top: -50px;
+  margin-top: 50px;
   height: auto;
 }
 
@@ -315,4 +315,7 @@ h6{
 
 #contacto{
   margin-top: 50px;
+}
+.subir-imagen {
+    margin-top: -20px; 
 }

@@ -37,27 +37,31 @@
 
 <body>
     <main class="container" id="navbar"></main>
+   
 
-    <main class="container" id="productos" style="margin-top: 100px;">
-        <h1>Formulario para agregar productos</h1>
-        <div id="alertContainer" style="width: 650px;"></div>
+    <main class="container" id="productos" style="margin-top: 50px;">
+         <div class="row align-items-start">
+        <h1 class="mb-4">Formulario para agregar productos</h1>
+        
+  <div class="col-md-8">
+        <div id="alertContainer" style="width: 100%; max-width: 800px;"></div>
         <form id="form" novalidate>
             <!-- Nombre del producto -->
             <div class="mb-3">
                 <label for="nombre" class="form-label">Nombre del producto</label>
                 <input type="text" class="form-control" id="nombre" name="nombre"
-                    placeholder="Ingresa el nombre del producto" style="width: 650px;">
+                    placeholder="Ingresa el nombre del producto">
             </div>
             <!-- Descripción del producto -->
             <div class="mb-3">
                 <label for="descripcion-producto" class="form-label">Descripción del producto</label>
                 <textarea class="form-control" id="descripcion-producto" name="descripcion-producto"
-                    placeholder="Máximo 300 caracteres" style="height: 200px; width: 650px;"></textarea>
+                    placeholder="Máximo 300 caracteres" ></textarea>
             </div>
             <!-- Categoría -->
             <div class="mb-3">
                 <label class="my-1 mr-2" for="categoria">Selecciona Categoría</label>
-                <select class="form-select" id="categoria" name="categoria" style="width: 650px;">
+                <select class="form-select" id="categoria" name="categoria">
                     <option value="" selected>Selecciona...</option>
                     <option value="Cafe">Café</option>
                     <option value="Cafeteras">Cafeteras</option>
@@ -70,8 +74,7 @@
             <!-- Precio -->
             <div class="mb-3">
                 <label for="precio" class="form-label">Precio del producto</label>
-                <input type="number" class="form-control" id="precio" name="precio" placeholder="Ingresa el precio $$"
-                    style="width: 650px;">
+                <input type="number" class="form-control" id="precio" name="precio" placeholder="Ingresa el precio $$">
             </div>
             <!-- Adjuntar imagen -->
             <div class="mb-3">
@@ -86,15 +89,17 @@
                 <input type="hidden" id="imagen-url" name="imagen-url">
             </div> -->
             <!-- Botón enviar -->
-            <div class="col-auto">
+            <div class="mb-3 mt-auto">
                 <button type="submit" class="btn btn-primary mb-3" id="btnProductos">Enviar</button>
             </div>
         </form>
+        </div>
 
-        <div class="col-md-4 d-flex justify-content-center"
-            style="position: absolute; top: 18%; right: 5%; max-width: 400px; height: auto; z-index: 0;">
-            <img src="imagen/download.webp" class="rounded float-end img-fluid rounded d-none d-md-block"
-                alt="semillas de café">
+        <div class="col-md-4 d-none d-md-flex align-items-start subir-imagen">
+            <img src="imagen/download.webp" class="img-fluid rounded"  alt="semillas de café" style="height: 100%; object-fit: cover;">
+        </div>
+
+        
         </div>
     </main>
 
