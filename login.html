@@ -47,7 +47,7 @@
   <h1 class="text-center mb-4">Inicio de sesión</h1>
   <div id="alertContainer"></div>
 
-  <form id="form" class="mx-auto">
+  <form id="form" class="mx-auto" style="max-width: 600px;">
     <!-- Correo -->
     <div class="mb-3" style="object-fit: contain; height: max-content; padding-top: 20px;">
       <label for="email" class="form-label">Correo electrónico</label>
@@ -61,10 +61,15 @@
     </div>
 
     <!-- Botón enviar -->
-    <div class="text-center">
-      <button id="signIn" type="submit" class="btn btn-primary" style="width: 100%; margin-top: 20px;">Iniciar Sesión</button>
+    <div class="text-center mt-4">
+      <button id="signIn" type="submit" class="btn btn-primary">Iniciar Sesión</button>
     </div>
   </form>
+
+  <!--Botón secundario-->
+   <div class="text-center mt-4">
+    <a href="./formRegistro.html" class="btn active"  >Crear Cuenta</a>
+     </div>
 
   <!-- Botón flotante -->
   <a href="formulario.html" class="btn btn-primary rounded-circle position-fixed shadow" style="top: 50%; right: 20px; transform: translateY(-50%);

@@ -48,7 +48,7 @@ if (!inicioSesion) {
 
     <style>
         .nav-link {
-            font-size: 1.5rem; 
+            font-size: 1.2rem; 
             padding: 10px 20px; 
             color: #333; 
             transition: color 0.3s ease, background-color 0.3s ease; 

@@ -8,9 +8,10 @@
     padding: 10px;
 }
 
+
 .form-content {
-    width: 100%;
-    max-width: max-content;
+    width: auto;
+    max-width: 700px;
     background-color: #3B3923;
     padding: 50px 60px 70px;
     text-align: center;
@@ -33,7 +34,7 @@
 }
 
 input {
-    width: 100%;
+    width: auto;
     background: transparent;
     border: 0;
     outline: none;
@@ -68,6 +69,7 @@ input::placeholder {
     outline: 0;
     cursor: pointer;
 }
+
 
 .input-group {
     height: 250px;
