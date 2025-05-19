@@ -11,6 +11,7 @@ body {
   color: var(--hg-color);
   width: 100%;
   height: auto;
+  padding-top: 70px;
 }
 
 .card {
@@ -45,6 +46,10 @@ div.container {
 }
 
 nav.navbar.navbar-expand-lg {
+   position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1030; 
   background-color: var(--hg-color);
   font-family: "Oxygen", sans-serif;
 
@@ -299,8 +304,14 @@ footer h5 {
   background: linear-gradient(135deg, rgba(59, 57, 35, 0.7), rgba(245, 245, 220, 0.7));
     border: none;
     object-fit: contain;
+<<<<<<< HEAD
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+=======
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    margin-top:10px;
+>>>>>>> 7ef67904a5e4fd5fc21b8a6d8290bd18090d1f20
 }
 
 #product-container .card-body,
