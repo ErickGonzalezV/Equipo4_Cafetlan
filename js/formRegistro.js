@@ -12,7 +12,7 @@ document.getElementById('form').addEventListener('submit', function(event) {
 
     alertContainer.innerHTML = '';
 
-     const camposVacios = [];
+    const camposVacios = [];
 
     if (nombre === "") camposVacios.push("Nombre Completo");
     if (telefono === "") camposVacios.push("Número de teléfono");
@@ -21,8 +21,8 @@ document.getElementById('form').addEventListener('submit', function(event) {
     if (confirmPassword === "") camposVacios.push("Confirmación de la contraseña");
 
     if (camposVacios.length > 0) {
-      showAlert(`Por favor, complete los siguientes campos:<br><ul>${camposVacios.map(c => `<li>${c}</li>`).join("")}</ul>`)
-      return;
+    showAlert(`Por favor, complete los siguientes campos:<br><ul>${camposVacios.map(c => `<li>${c}</li>`).join("")}</ul>`)
+    return;
     }
 
     //Nombre

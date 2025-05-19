@@ -20,7 +20,7 @@ const cloudinaryWidget = cloudinary.createUploadWidget({
         });
     }
 });
-   document.getElementById("categoria").addEventListener("change", function () {
+document.getElementById("categoria").addEventListener("change", function () {
         const errorDiv = document.getElementById("categoria-error");
         if (this.value === "") {
             errorDiv.style.display = "block";

@@ -130,20 +130,13 @@ if (!inicioSesion) {
         <ul class="navbar-nav d-flex gap-5">
           <li class="nav-link" >
             <i class="bi bi-cart2"></i>
-<<<<<<< HEAD
-            </li>
-          
-          <li class="nav-link d-flex align-items-center">
-          <span class="fw-bold me-3" style="color: #3B3923;">Hola, ${inicioSesion.nombre}</span>
-          <button class="btn btn-sm" style="background-color:#736F4E; color:#B4C292; border: none; border-radius: 4px" onclick="cerrarSesion()">Cerrar sesión</button>
-        </li>
-=======
+
           </li>
    <li class="nav-link d-flex align-items-center">
   <span class="fw-bold me-3" style="color: #3B3923;">Hola, ${inicioSesion.nombre}</span>
   <button class="btn btn-sm" style="background-color:#736F4E; color:#B4C292; border: none; border-radius: 4px; font-size: 1.2rem;" onclick="cerrarSesion()">Cerrar sesión</button>
 </li>
->>>>>>> 7ef67904a5e4fd5fc21b8a6d8290bd18090d1f20
+
         </ul>
       </div>
     </div>

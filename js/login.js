@@ -1,6 +1,6 @@
 const btnLogin = document.getElementById('signIn');
 
-document.getElementById('form').addEventListener('submit', function(event) {
+document.getElementById('form').addEventListener('submit', function (event) {
     event.preventDefault()
 
     const email = document.getElementById('email').value.trim();
@@ -14,21 +14,21 @@ document.getElementById('form').addEventListener('submit', function(event) {
     const user = users.find(user => user.email === email && user.password === password);
 
 
-      if (user) {
-     sessionStorage.setItem("Usuario", JSON.stringify(user));
-     alertContainer.innerHTML = `
+    if (user) {
+        sessionStorage.setItem("Usuario", JSON.stringify(user));
+        alertContainer.innerHTML = `
             <div class="alert alert-success alert-dismissible fade show" role="alert">
                 Inicio de usuario exitoso.
             </div>
         `;
-    window.location.href = "index.html";
+        window.location.href = "index.html";
         return;
-  } else {
-    showAlert('Su correo y/o contraseña es errónea');
+    } else {
+        showAlert('Su correo y/o contraseña es errónea');
         return;
-  }
+    }
 
-  function showAlert(message) {
+    function showAlert(message) {
         const alertDiv = document.createElement('div');
         alertDiv.className = 'alert alert-danger alert-dismissible fade show';
         alertDiv.role = 'alert';
