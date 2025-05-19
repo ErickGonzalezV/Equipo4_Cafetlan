@@ -4,7 +4,7 @@ const footer = document.getElementById("footer")
 const inicioSesion = JSON.parse(sessionStorage.getItem("Usuario"));
 
 if (!inicioSesion) {
-  navbar.insertAdjacentHTML("afterend",`
+  navbar.insertAdjacentHTML("afterend", `
     <nav class="navbar navbar-expand-lg sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">Cafetlán</a>
@@ -31,10 +31,14 @@ if (!inicioSesion) {
         </ul>
       </div>
 <div class="icons d-flex ms-auto ">
+
         <ul class="navbar-nav d-flex gap-5">
-           <li class="nav-link" >
-            <i class="bi bi-cart2"></i>
-          </li>
+          <li class="nav-link" >
+          <a href = "./carrito.html" class = "color-carrito">
+            <i class="bi bi-cart2" href = "./carrito.html"></i>
+          </a>
+            </li>
+
           <li class="nav-link">
           <a href="./login.html" class="color-login">
             <i class="bi bi-person-fill" href="./login.html"></i>
@@ -99,7 +103,7 @@ if (!inicioSesion) {
 
 </nav>`);
 } else {
-   navbar.insertAdjacentHTML("afterend",`<nav class="navbar navbar-expand-lg sticky-top">
+  navbar.insertAdjacentHTML("afterend", `<nav class="navbar navbar-expand-lg sticky-top">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">Cafetlán</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -121,15 +125,17 @@ if (!inicioSesion) {
           </li>
         </ul>
       </div>
-<div class="icons d-flex ms-auto ">
+
+  <div class="icons d-flex ms-auto ">
         <ul class="navbar-nav d-flex gap-5">
-           <li class="nav-link" >
+          <li class="nav-link" >
             <i class="bi bi-cart2"></i>
-          </li>
-   <li class="nav-link d-flex align-items-center">
-  <span class="fw-bold me-3" style="color: #3B3923;">Hola, ${inicioSesion.nombre}</span>
-  <button class="btn btn-sm" style="background-color:#736F4E; color:#B4C292; border: none; border-radius: 4px" onclick="cerrarSesion()">Cerrar sesión</button>
-</li>
+            </li>
+          
+          <li class="nav-link d-flex align-items-center">
+          <span class="fw-bold me-3" style="color: #3B3923;">Hola, ${inicioSesion.nombre}</span>
+          <button class="btn btn-sm" style="background-color:#736F4E; color:#B4C292; border: none; border-radius: 4px" onclick="cerrarSesion()">Cerrar sesión</button>
+        </li>
         </ul>
       </div>
     </div>
@@ -137,7 +143,7 @@ if (!inicioSesion) {
 </nav>`);
 }
 
-    footer.insertAdjacentHTML("beforeend", `
+footer.insertAdjacentHTML("beforeend", `
         <footer>
       <div id="tituloFooter">
         <h2>Cafetlán</h2>
@@ -145,8 +151,8 @@ if (!inicioSesion) {
       <div id="footerDos">
       <div id="contactoFooter">
       <h3>Aviso legal</h3>
-           <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="IMPORTANTE: Ésta página solo es un proyecto estudiantil. No se comercia con ningún contenido mostrado aquí.">
-         Aviso
+          <button type="button" class="btn btn-danger" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="right" data-bs-content="IMPORTANTE: Ésta página solo es un proyecto estudiantil. No se comercia con ningún contenido mostrado aquí.">
+        Aviso
           </button>
           </div>
           <div class="proyectoFooter">
@@ -157,16 +163,15 @@ if (!inicioSesion) {
       </div>
     </footer>  `)
 
-    //cerrar sesión
-    function cerrarSesion() {
+//cerrar sesión
+function cerrarSesion() {
   sessionStorage.removeItem("Usuario");
   window.location.href = "login.html";
 }
-    //botón de disclaimer popover 
-    document.addEventListener('DOMContentLoaded', function () {
-      var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
-      var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
-          return new bootstrap.Popover(popoverTriggerEl);
-      });
+//botón de disclaimer popover 
+document.addEventListener('DOMContentLoaded', function () {
+  var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+  var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+    return new bootstrap.Popover(popoverTriggerEl);
   });
- 
+});

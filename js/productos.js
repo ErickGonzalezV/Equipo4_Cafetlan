@@ -141,17 +141,17 @@ addItem({
 });
 
 addItem({
-    name: "Café Fusión Tres Regiones",
-    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747073065/IMAGEN_4_EDITADA-Photoroom_pmhi7v.jpg",
-    description: "Fusión de granos de Veracruz, Oaxaca y Chiapas. Tostado con más de 20 años de experiencia.",
+    name: "Café Toxtla",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747612322/cafeToxtla-fotor-bg-remover-2025051817517_srckrg.png",
+    description: "Te ofrecemos nuestro café artesanal; tostamos el café en hornos de tabique, utilizamos cazuelas para tostar, estamos preservando la calidad tradicional y artesanal del café.",
     price: 400,
 });
 
 addItem({
-    name: "Café Lachi Organic's",
-    img: "https://m.media-amazon.com/images/I/719sPpDpEGL._AC_SL1500_.jpg",
-    description: "Café criollo tostado a la leña. Notas de caramelo, chocolate y canela.",
-    price: 200,
+    name: "Ensueño Mixteco",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747591620/cafeartesanalmixteco_resized_htms3w.png",
+    description: "Nuestro café es 100% arábica y es cultivado en la Sierra Madre Oriental de Puebla, dulce, afrutado, con intensa acidez y dulzor cítrico.",
+    price: 450,
 });
 
 addItem({

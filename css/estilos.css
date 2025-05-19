@@ -235,7 +235,7 @@ footer h5 {
 
 .card-body .btn {
   margin-left: 20px; /* alinear con el texto */
-   min-width: 30px; 
+  min-width: 30px; 
 }
   
 
@@ -299,13 +299,13 @@ footer h5 {
   background: linear-gradient(135deg, rgba(59, 57, 35, 0.7), rgba(245, 245, 220, 0.7));
     border: none;
     object-fit: contain;
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 #product-container .card-body,
 #product-container-local .card-body {
-    background: transparent; 
+    background: transparent;
     padding: 15px;
     object-fit: contain;
 }
@@ -317,5 +317,5 @@ h6{
   margin-top: 50px;
 }
 .subir-imagen {
-    margin-top: -20px; 
+    margin-top: -20px;
 }

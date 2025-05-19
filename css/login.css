@@ -1,8 +1,8 @@
 .login-container {
-     width: auto;
+    width: auto;
     background-color: #736F4E;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     padding: 10px;
