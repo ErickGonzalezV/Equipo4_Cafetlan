@@ -274,31 +274,61 @@ footer h5 {
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-left: 10px;
             padding: 4%;
-            width: 390px;
-            min-height: 700px;
+           max-width: 400px;
+            min-height: 550px;
+            height:100%;
             display: flex;
-            flex-direction: column;
+           flex-direction: column;
+            justify-content: space-between;
+           
             
         }
         .card-mvv-img-top {
-            min-height: 400px;
-            min-width: 900px;
+           width: 100%;
+          height: 300px;
             object-fit: cover;
             border-radius: 10px;
         }
-        .card-mvv-body {
-            flex-grow: 1;
-            text-align: justify;
-            padding: 10px;
-        }
+       .card-body-mvv {
+        flex-grow: 1;
+       display: flex;
+      flex-direction: column;
+      justify-content: flex-start; 
+      gap: 10px; 
+      padding: 20px 10px;
+      text-align: left;;
+}
         .card-title, .card-text{
           margin-left: 20px;
           margin-right: 20px;
+         
         }
         .card-title{
-          margin-top: 25px;
+          margin-top: 10px;
+             margin-bottom: 10px;
         }
+        .card-text {
+        margin: 0; 
+         margin-left: 20px;
+          margin-right: 20px;
+}
+  @media (max-width: 576px) {
+  .card-mvv {
+    padding: 5%;
+    border-radius: 20px;
+  }
+
+  .card-title,
+  .card-text {
+    margin-left: 10px;
+    margin-right: 10px;
   
+  }
+
+  .card-body-mvv {
+    padding: 5px;
+  }
+}
 #product-container .card,
 #product-container-local .card {
   background: linear-gradient(135deg, rgba(59, 57, 35, 0.7), rgba(245, 245, 220, 0.7));
@@ -326,4 +356,11 @@ h6{
 }
 .subir-imagen {
     margin-top: -20px;
+}
+
+@media (max-width: 768px) {
+  #cafinfo {
+    padding-right: 60px; 
+  }
+
 }
