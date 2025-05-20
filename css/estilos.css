@@ -100,10 +100,6 @@ p {
   background-color: var(--bg-color);
 }
 
-a.btn {
-  z-index: 9999;
-}
-
 .btn-primary {
   background-color: var(--vino-color);
   border-color: var(--vino-color);

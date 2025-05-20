@@ -99,18 +99,20 @@ function mostrarProductosDeLocalStorage() {
 
     productos.forEach(producto => {
         const itemHTML = `
-        <div class="col-md-4 mb-4">
-            <div class="card h-100" >
-                <img src="${producto.imagen || ''}" class="card-img-top" alt="image id="imgProd"">
-                <div class="card-body">
-                    <h5 class="card-title">${producto.nombre || 'Sin nombre'}</h5>
-                    <p class="card-text">${producto.descripcion || 'Sin descripción'}</p>
-                    <p class="card-text">Precio: $${producto.precio || 0}</p>
-                    <a href="#" class="btn btn-primary mt-auto" onclick="agregarAlCarrito(${JSON.stringify(producto)})">Agregar al carrito</a>
-                </div>
-            </div>
-            <br/>
+        <div class="col-md-4 mb-3">
+        <div class="card h-100 shadow" style="border-radius: 20px; padding-top: 30px; min-height: 80px;">
+        <div style="background: white; padding: 12px; border-radius: 15px; width: 100%; height: 260px; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 10px;">
+        <img src="${producto.imagen || ''}" alt="image" style="max-height: 100%; max-width: 100%; object-fit: contain; border-radius: 10px;">
         </div>
+        <div class="card-body d-flex flex-column px-3" style="padding-top: 0;">
+        <h5 class="card-title mb-4">${producto.nombre || 'Sin nombre'}</h5>
+        <p class="card-text mb-2">${producto.descripcion || 'Sin descripción'}</p>
+        <p class="card-text mb-0"><strong>Precio: $${producto.precio || 0} MXN</strong></p>
+        <a href="#" class="btn btn-primary mt-auto" onclick='agregarAlCarrito(${JSON.stringify(producto)})'>Agregar al carrito</a>
+        </div>
+        </div>
+        <br/>
+    </div>
         `;
         itemsContainer.innerHTML += itemHTML;
     });
