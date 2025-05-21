@@ -5,7 +5,7 @@ const inicioSesion = JSON.parse(sessionStorage.getItem("Usuario"));
 
 if (!inicioSesion) {
   navbar.insertAdjacentHTML("afterend", `
-    <nav class="navbar navbar-expand-lg sticky-top">
+    <nav class="navbar navbar-expand-lg">
   <div class="container-fluid">
     <a class="navbar-brand" href="./index.html">Cafetlán</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -62,6 +62,9 @@ if (!inicioSesion) {
             color: #fff; 
             background-color: #6b705c; 
         }
+              .color-carrito {
+  color: #3B3923;
+}
         /* Responsividad */
         @media (max-width: 768px) {
             .nav-link {

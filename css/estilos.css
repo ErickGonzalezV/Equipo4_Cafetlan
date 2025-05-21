@@ -100,10 +100,6 @@ p {
   background-color: var(--bg-color);
 }
 
-a.btn {
-  z-index: 9999;
-}
-
 .btn-primary {
   background-color: var(--vino-color);
   border-color: var(--vino-color);
@@ -117,10 +113,23 @@ a.btn {
 footer {
   background-color: #3B3923;
   color: #B4C292;
-  padding: 40px;
+  padding: 20px;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+}
+
+.login {
+  footer {
+  background-color: #3B3923;
+  color: #B4C292;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
 }
 
 #tituloFooter {
@@ -256,10 +265,6 @@ footer h5 {
   color: beige;
 }
 
-#header {
-  background: url(https://img.freepik.com/foto-gratis/manos-granos-cafe_611759-1.jpg) center center / cover no-repeat;
-}
-
 .card-img-top{
   padding-top: 10px;
   padding-left: 5px;
@@ -362,5 +367,7 @@ h6{
   #cafinfo {
     padding-right: 60px; 
   }
+
+ 
 
 }
