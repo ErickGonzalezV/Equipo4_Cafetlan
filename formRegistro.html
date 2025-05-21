@@ -36,7 +36,7 @@
   <!-- crimson instalada -->
 </head>
 
-<body>
+<body id="signup">
 
   <!-- Barra nav -->
   <main class="container" id="navbar">
@@ -45,43 +45,42 @@
   <!-- Fin barra nav -->
 
   <!-- INICIO DEL FORMULARIO  -->
-  <main class="container" id="registro" style="margin-top: 100px;">
+  <main class="container" id="registro" style="margin-top: 100px; width: 100%;">
     <h1 class="text-center">Regístrate</h1>
     <div id="alertContainer" style="width: 100%; max-width: 800px; margin: auto;"></div>
-    <form id="form" novalidate class="mx-auto" style="max-width: 700px;">
+    <form id="form" novalidate class="mx-auto px-3" style="max-width: 700px;">
 
       <!-- Nombre completo -->
       <div class="mb-3">
         <label for="nombre" class="form-label">Nombre completo</label>
         <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo"
-          style="width: 650px;">
+         >
       </div>
 
       <!-- Teléfono -->
       <div class="mb-3">
         <label for="telefono" class="form-label">Número de teléfono</label>
-        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ej. 5512345678"
-          style="width: 650px;">
+        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="Ej. 5512345678">
       </div>
 
       <!-- Correo -->
       <div class="mb-3">
         <label for="email" class="form-label">Correo electrónico</label>
-        <input type="email" class="form-control" id="email" placeholder="Ej. ejemplo@correo.com" style="width: 650px;">
+        <input type="email" class="form-control" id="email" placeholder="Ej. ejemplo@correo.com">
       </div>
 
       <!-- Contraseña -->
       <div class="mb-3">
         <label for="password" class="form-label">Contraseña</label>
         <input type="password" class="form-control" id="password" placeholder="Ingresa una contraseña segura"
-          style="width: 650px;">
+          >
       </div>
 
       <!-- Confirmar contraseña -->
       <div class="mb-3">
         <label for="confirmPassword" class="form-label">Confirmar contraseña</label>
         <input type="password" class="form-control" id="confirmPassword" name="confirmPassword"
-          placeholder="Repite tu contraseña" style="width: 650px;">
+          placeholder="Repite tu contraseña">
       </div>
 
       <!-- Indicaciones -->
@@ -95,7 +94,7 @@
     </form>
 
     <!-- Botón flotante -->
-    <a href="formulario.html" class="btn btn-primary rounded-circle position-fixed shadow" style="top: 50%; right: 20px; transform: translateY(-50%);
+    <a href="carrito.html" class="btn btn-primary rounded-circle position-fixed shadow" style="top: 50%; right: 20px; transform: translateY(-50%);
           width: 60px; height: 60px;
           display: flex; align-items: center; justify-content: center; font-size: 24px;">
       <i class="bi-cart"></i>
