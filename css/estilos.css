@@ -117,6 +117,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  width: 100%;
 }
 
 .login {
@@ -130,6 +131,16 @@ footer {
   flex-direction: row;
   justify-content: space-around;
 }
+}
+
+#signup {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  #signup {
+    width: 100%;
+  }
 }
 
 #tituloFooter {
@@ -367,7 +378,4 @@ h6{
   #cafinfo {
     padding-right: 60px; 
   }
-
- 
-
 }
