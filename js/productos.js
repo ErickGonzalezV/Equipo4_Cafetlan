@@ -133,7 +133,7 @@ addItem({
 
 addItem({
     name: "Café Casa Mayor",
-    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747073063/IMAGEN_2_EDITADA-Photoroom_x16fnz.jpg",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747844049/bolsaCafe_m6yupi.jpg",
     description: "Café calidad Pluma, de variedad Thypica Arábica. Café Planchuela. Sabor suave y afrutado, con notas de nuez y chocolate.",
     price: 370,
 });
