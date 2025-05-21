@@ -265,10 +265,6 @@ footer h5 {
   color: beige;
 }
 
-#header {
-  background: url(https://img.freepik.com/foto-gratis/manos-granos-cafe_611759-1.jpg) center center / cover no-repeat;
-}
-
 .card-img-top{
   padding-top: 10px;
   padding-left: 5px;
@@ -371,5 +367,7 @@ h6{
   #cafinfo {
     padding-right: 60px; 
   }
+
+ 
 
 }

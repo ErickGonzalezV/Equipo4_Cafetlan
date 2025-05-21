@@ -62,6 +62,9 @@ if (!inicioSesion) {
             color: #fff; 
             background-color: #6b705c; 
         }
+              .color-carrito {
+  color: #3B3923;
+}
         /* Responsividad */
         @media (max-width: 768px) {
             .nav-link {
