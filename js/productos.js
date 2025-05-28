@@ -108,7 +108,7 @@ function mostrarProductosDeLocalStorage() {
                     <div class="card-body d-flex flex-column px-3" style="padding-top: 0;">
                         <h5 class="card-title mb-4">${producto.nombre || 'Sin nombre'}</h5>
                         <p class="card-text mb-2">${producto.descripcion || 'Sin descripción'}</p>
-                        <p class="card-text mb-0">Precio: $${producto.precio || 0}</p>
+                        <p class="card-text mb-0"><strong>Precio: $${producto.precio || 0}</strong></p>
                         <a href="#" class="btn btn-primary mt-auto" onclick="agregarAlCarrito(${JSON.stringify(producto)})">Agregar al carrito</a>
                         </div>
                     </div>
