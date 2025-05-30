@@ -108,8 +108,8 @@ function mostrarProductosDeLocalStorage() {
                     <div class="card-body d-flex flex-column px-3" style="padding-top: 0;">
                         <h5 class="card-title mb-4">${producto.nombre || 'Sin nombre'}</h5>
                         <p class="card-text mb-2">${producto.descripcion || 'Sin descripción'}</p>
-                        <p class="card-text mb-0">Precio: $${producto.precio || 0}</p>
-                        <a href="#" id="AgregarAlCarrito" class="btn btn-primary mt-auto" onclick="agregarAlCarrito(${JSON.stringify(producto)})">Agregar al carrito</a>
+                        <p class="card-text mb-0"><strong>Precio: $${producto.precio || 0}</strong></p>
+                        <a href="#" class="btn btn-primary mt-auto" onclick="agregarAlCarrito(${JSON.stringify(producto)})">Agregar al carrito</a>
                         </div>
                     </div>
                 <br/>
@@ -133,7 +133,7 @@ addItem({
 
 addItem({
     name: "Café Casa Mayor",
-    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747073063/IMAGEN_2_EDITADA-Photoroom_x16fnz.jpg",
+    img: "https://res.cloudinary.com/dzlbldti5/image/upload/v1747844049/bolsaCafe_m6yupi.jpg",
     description: "Café calidad Pluma, de variedad Thypica Arábica. Café Planchuela. Sabor suave y afrutado, con notas de nuez y chocolate.",
     price: 370,
 });

@@ -132,7 +132,9 @@ if (!inicioSesion) {
   <div class="icons d-flex ms-auto ">
         <ul class="navbar-nav d-flex gap-5">
           <li class="nav-link" >
-            <i class="bi bi-cart2"></i>
+         <a href = "./carrito.html" class = "color-carrito">
+            <i class="bi bi-cart2" href = "./carrito.html"></i>
+          </a>
 
           </li>
    <li class="nav-link d-flex align-items-center">
@@ -152,6 +154,9 @@ if (!inicioSesion) {
             transition: color 0.3s ease, background-color 0.3s ease; 
             border-radius: 5px; 
         }
+            .color-carrito {
+  color: #3B3923;
+}
         .nav-link:hover {
             color: #fff; 
             background-color: #6b705c; 
