@@ -11,7 +11,7 @@ document.getElementById('form')
     let telefono = document.getElementById('telefono').value.trim();
 
     /*Aquí se tienen que insertar las validaciones*/
-   const camposVacios = [];
+  const camposVacios = [];
 
     if (nombre === "") camposVacios.push("nombre");
     if (email === "") camposVacios.push("correo");
