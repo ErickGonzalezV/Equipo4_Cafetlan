@@ -7,15 +7,20 @@ const prodAgregado = jsonProdAgregado ? JSON.parse(jsonProdAgregado) : [];
 function addItem(item) {
     const itemHTML = `
 <div class="col-md-4 mb-3">
-        <div class="card h-100 shadow" style="border-radius: 20px; padding-top: 30px; min-height: 80px;">
-        <div style="background: white; padding: 12px; border-radius: 15px; width: 100%; height: 260px; display: flex; align-items: center; justify-content: center; overflow: hidden; margin-bottom: 10px;">
-        <img src="${item.img}" alt="image" style="max-height: 100%; max-width: 100%; object-fit: contain; border-radius: 10px;">
+        <div class="card h-100 shadow" style="border-radius: 20px; 
+        padding-top: 30px; min-height: 80px;">
+        <div style="background: white; padding: 12px; border-radius:
+         15px; width: 100%; height: 260px; display: flex; align-items: center; 
+         justify-content: center; overflow: hidden; margin-bottom: 10px;">
+        <img src="${item.img}" alt="image" style="max-height: 100%; max-width: 100%; 
+        object-fit: contain; border-radius: 10px;">
         </div>
         <div class="card-body d-flex flex-column px-3" style="padding-top: 0;">
         <h5 class="card-title mb-4">${item.name}</h5>
         <p class="card-text mb-2">${item.description}</p>
         <p class="card-text mb-0"><strong>Precio: $${item.price} MXN</strong></p>
-        <a href="#" class="btn btn-primary mt-auto" onclick='agregarAlCarrito(${JSON.stringify(item)})'>Agregar al carrito</a>
+        <a href="#" class="btn btn-primary mt-auto" 
+        onclick='agregarAlCarrito(${JSON.stringify(item)})'>Agregar al carrito</a>
         </div>
         </div>
         <br/>
